@@ -1,0 +1,17 @@
+# Sakurai Login Header UI Container
+# elementname: locatortype: locatorvalue
+
+iframe: xpath: //*[@id='prepu-frame']
+lnk_questionLibrary: css: .menu-questionLibrary>a
+lnk_assignQuiz: css: .menu-assignQuiz>a
+lnk_assignExam: css: .menu-assignExam>a
+
+drp_dwn_myClasses: xpath: (//a[@class="dropdown-toggle"])[1]
+lnk_howAmIDoing: xpath: .//li[@class='menu-haid']/a
+lnk_viewAllClasses: xpath: ((.//ul[@class='dropdown-menu'])[2]//a)[last()]
+lnk_practiceQuiz: css: .menu-practiceQuiz>a
+lnk_assignments: css: .menu-assignments>a
+link_assignmentActive: classname: menu-assignments active
+lnk_practiceExam: xpath: .//*[@class='menu-exam ']/a
+QuestionLibraryLink: xpath://li[contains(@class,'menu-questionLibrary')]/a[text()=' Question Library ']
+lnk_examReports: xpath: .//li[@class='menu-exam-reports']//a

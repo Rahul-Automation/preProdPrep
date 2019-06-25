@@ -1,0 +1,41 @@
+# Sakurai Search Home Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+lnk_SignIn: xpath: //a[text()="Sign In"]
+lnk_Home: linktext: Home
+lnk_Menu: xpath: //*[@id="menu-primary-navigation"]/li/a[text()='${link text}']
+
+#thePoint Integration
+list_Products: css: .product_result.flush.floatwrapper
+lnk_Logout: xpath: //a[@id='headerlogout']/strong
+btn_ReturnUser: xpath: //a[contains(.,'Return User')]
+lnk_MyContent: xpath: //a[text()='My Content']
+MyContent_Heading: css: .clearfix.content-header>h1
+list_products: xpath: .//div[@class='product_result flush floatwrapper']
+product: xpath: .//*[@class='clearfix integratedcourse-header'and contains (.,'${product_name}')]/following-sibling::ul/li[contains(.,'Adaptive Learning by PrepU')]/a
+lnk_Hinkle: xpath: .//*[@class='clearfix integratedcourse-header'and contains (.,'Hinkle')]/following-sibling::ul/li[contains(.,'Adaptive Learning by PrepU')]/a
+lnk_NCLEX_RN: xpath: (.//img[contains(@alt,'${product}')])[1]/parent::a
+tab_adaptive: xpath: .//ul[@id='tab-menu']//li//a[@data-breadcrumb-name='Adaptive Learning by PrepU']
+prepU_Header: css: .breadcrumb
+prepU_iFrame: xpath: //*[@id='prepu-frame']
+ins_prepUHeader: css: .sub-header.navbar-default.instructor-submenu
+stu_prepUHeader: css: .sub-header.navbar-default.student-submenu
+ins_ClassPerf: css: #classPerformance>h2
+lnk_Q.Library: xpath: //li[@class='menu-questionLibrary']/a
+Lib_CreatedQues: css: .created-questions
+lnk_AssignQuiz: xpath: //li[@class='menu-assignQuiz']/a
+lnk_AssignExam: xpath: //li[@class='menu-assignExam']/a
+lnk_ExamSummary: xpath: //li[@class='menu-summaryExam']/a
+ExamSummaryHeading: xpath: .//*[@class='classPracticeExamPerformance']/h2
+Header_QuizPage: css: .step1.stepsContent>h2
+lnk_GoBack: xpath: .//a[@class='ember-view go-back']
+stu_HAID: xpath: .//li[@class='menu-haid active']/a
+stu_PracticeQuiz: xpath:.//li[@class='ember-view fork-link menu-practiceQuiz']/a
+stu_Assignments: xpath: //li[@class='menu-assignments']/a
+stu_PracticeExam:xpath://li[@class='menu-exam ']/a
+stu_ExamReports: xpath: //li[@class='menu-exam-reports']/a
+btn_StartQuiz:xpath://*[@id='quiz_start']/button
+stu_MyClasses: css: #class-container-section-header
+stu_ExamHeader: xpath: //*[@class='container exam-content']/h1
+stu_ExamReportsHeader: css: .exam-reports-header
+stu_Class1: xpath: .//*[@class='classes-list clearfix']/h3[1]/a

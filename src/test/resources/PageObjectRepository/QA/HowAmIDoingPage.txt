@@ -1,0 +1,46 @@
+# Sakurai  How Am I Doing  Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+#E2E Student
+iframe: xpath: //*[@id='prepu-frame']
+haid_tab: css: .menu-haid.active
+practicequiz_tab: css: .menu-practiceQuiz>a
+selected_practicetab: css: .menu-practiceQuiz.active>a
+assignment_tab: xpath: .//li[@class='menu-assignments']/a
+tabAssignment_selected: css: .menu-assignments.active>a
+txt_chapterName: xpath: (.//div[@class='bar-graph-container chapters']//h4)[1]
+txt_numOfQuiz: xpath: .//h4[contains(text(),'${chapterName}')]/../small
+
+lnk_haid: css: #menu-primary-navigation li:nth-child(1) a
+lnk_haidActive: xpath: //li[contains(@class,'menu-haid active')]/a
+lnk_joinAClassOnHMID: xpath: (.//*[text()='Join a Class'])[1]
+
+#Student
+lnk_practiceQuizActive: xpath: //li[@class='menu-practiceQuiz active']/a
+chk_chapter: xpath: (//input[@name='chapters'])[1]
+lnk_viewQuizHistory: css: .ember-view.pull-right.view-quiz-history
+txt_chapterNames: css: .unit>h4
+txt_quizTakens: css: .unit>small
+txt_className: xpath: //h1[text()='${className}']
+txt_currentMasteryLevel1: css: .performance-sub-title>span script[id*='start']
+txt_currentMasteryLevel: css: .performance-sub-title>span
+lst_yourMastery: css: .unit>figure:nth-of-type(1) .value
+
+txt_NumOfQuizAndQuestion:xpath:.//div[@class='overall-performance']/p[1]
+hover_graph:xpath:(//*[name()='path'])[1]
+quizInfo_graph:xpath:.//table[@id='data']/tbody/tr/td[1]
+quizInfo2_graph:xpath:.//table[@id='data']/tbody/tr/td[2]
+numOfQuizOnXAxis:xpath://*[name()='svg']/*[name()='g'][3]/*[name()='g'][1]/*[name()='text']
+masteryLevelOnYAxis:xpath://*[name()='svg']/*[name()='g'][3]/*[name()='g'][2]/*[name()='text']
+svgGraph:css:svg
+assignmentStatus:css:.self-student
+quizData:xpath://h4[contains(.,'2: Chemical Bonding')]/../small
+lnk_whatIsThis_ForML: css: .gray.pull-left.overall-whats-btn
+lnk_whatIsThis_ForPerformanceChapter: id: wit
+lnk_whatIsThis_ForStrengthAndWeakness: xpath: //a[@class='gray' and contains(text(),"What's this?")]
+lnk_practiceWeakestChapter: id: take-a-practice-quiz
+txt_heading_AssignmentStats: css: .col-md-4.clearfix>h4
+txt_strength: xpath: //h5[@class='semi-title' and contains(text(),'Strength')]
+txt_weakness: xpath: //h5[@class='semi-title' and contains(text(),'Weaknesses')]
+txt_performanceByChapter: css: .header>h2

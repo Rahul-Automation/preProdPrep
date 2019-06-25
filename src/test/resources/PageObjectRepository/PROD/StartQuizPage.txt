@@ -1,0 +1,12 @@
+# Sakurai Start Quiz Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+lbl_quizName: xpath: //*[contains(text(),'${value}')]
+lbl_currentMastery: xpath: //div[contains(text(),"Current Mastery")]//div[@class='ml']
+lbl_targetMastery: xpath: //div[contains(text(),"Target Mastery")]//div[@class='ml']
+txt_complete: css: .label.label-success
+txt_pastDue: css: .label.label-danger
+txt_messageBeforeDueDate: xpath: (//div[@class='details'])[1]
+txt_pointHighlight: css: .points.highlight
+btn_done1: xpath: //a[text()='DONE']

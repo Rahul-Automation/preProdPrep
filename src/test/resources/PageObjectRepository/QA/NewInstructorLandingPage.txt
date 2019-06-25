@@ -1,0 +1,7 @@
+# Sakurai New Instructor Landing Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+txt_sectionHeader: css: .section-header
+lnk_createClass: css: .create-class
+lnk_joinCoInstructor: css: .join-co-instructor

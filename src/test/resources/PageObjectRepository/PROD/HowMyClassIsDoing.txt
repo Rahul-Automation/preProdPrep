@@ -1,0 +1,131 @@
+# Sakurai  How Am I Doing  Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+iframe: xpath: .//*[@id='prepu-frame']
+txt_hmcd: css: .menu-hmcd.active
+tab_questionLibrary: xpath: .//li[@class='menu-questionLibrary']//a
+stab_questionLibrary: xpath: .//li[@class='menu-questionLibrary active']//a
+manageQuiz_tab: xpath: .//li[@class='menu-assignQuiz']//a
+selected_manageQuiz: xpath: .//li[@class='menu-assignQuiz active']//a
+manageExam_tab: xpath: .//li[@class='menu-assignExam']//a
+selected_manageExam: xpath: .//li[@class='menu-assignExam active']//a
+
+
+lnk_hmcd: css: #menu-primary-navigation li:nth-child(1) a
+lnk_assignments: xpath: //a[text()=' Assignments ']
+lnk_practiceQuiz: xpath: //li[@class='menu-practiceQuiz']/a
+lnk_manageAssign: css: #manageAssignments a
+lnk_classPerformance: xpath: .//a[contains(text(),'Class Performance')]
+txt_classPerformance: css: #classPerformance>h2
+lnk_assignmentResults: xpath: .//a[contains(text(),'Assignment Results')]
+txt_assignmentResults: id: assignmentResults
+lnk_studentUsage: xpath: .//a[contains(text(),'Student Usage')]
+txt_studentUsageTitle: classname: student-usage-title
+lnk_strengthsWeaknesses: xpath: .//a[contains(text(),'Strengths & Weaknesses')]
+txt_strength: css: .strengths-bars.bar-graph-container>h3
+txt_weakness: css: .weaknesses-bars.bar-graph-container>h3
+lnk_overallUsage:xpath:.//a[contains(text(),'Overall Usage')]
+txt_overallUsage: css: #overall-usage>h2
+lnk_specificMisconceptions: xpath: .//a[contains(text(),'Specific Misconceptions')]
+txt_specificMisconceptions: css: #specificMisconceptions>h2
+lnk_enrollStudent: xpath: .//a[contains(text(),'Enroll Student')]
+txt_enrollStudent: css: .explanation-box>h2
+lnk_mlQuizAssignmentFirst: xpath: (//td/a)[2]
+lnk_createdMLAssignment: xpath: .//*[@id='mlAssignmentResults']//table//a[text()='${assignmentName}']
+class1HeaderText: xpath: //div[contains(@class,'sub-header')]//h1
+txt_classTerm: css: .term-class label
+lnk_questionCollection: xpath: //li[@class='menu-questionLibrary']/a
+lnk_QLibrary_Active: xpath: //li[@class='menu-questionLibrary active']/a
+anchor_studentUsage:xpath:.//a[contains(text(),'Student Usage')]
+heading_studentUsage:xpath:.//div[@id='studentUsage']//h2
+link_remove:xpath:.//*[@id='studentUsage']//table//a[@class='remove-student underline']
+lnk_RemoveStudent:xpath:.//td[@title='${StudentName}']/../td[@class='hidden-xs remove student-usage-remove-td']/a
+bttn_remove:xpath:.//button[contains(text(),'Remove')]
+table_column:xpath:.//table[@class='table table-striped tablesorter studentUsage-table']//th/a/span
+student_names:xpath://table[@class='table table-striped tablesorter studentUsage-table']//td[@class='name']
+defaultSortName:xpath:.//span[@class='name-userLastName action headerSortUp']
+numOfLogin:xpath:.//*[@id='studentUsage']//td[@class='hidden-xs logins center']
+numOfQuizCompleted:xpath:.//td[@title='Student, Automation']/../td[@class='hidden-xs quizzes-completed']
+lastLoginDate:xpath://td[@title='Student, Automation']/../td[@class='hidden-xs lastLogin date']
+masteryLevel:xpath:.//td[@title='Student, Automation']/../td[@class='xs-last mastery-level']
+email_address:xpath://td[@title='${StudentName}']/a/*[@class='student-email']
+sort_studentNames:xpath://*[@class='name-userLastName action headerSortUp']
+dashInQuizCompletedColumn:xpath://td[@title='${StudentName}']/../td[@class='hidden-xs quizzes-completed']
+remove_modal_window:xpath:.//div[@class='modal-dialog remove-student-dialog']/div[@class='modal-content']
+remove_header_message:xpath:.//div[@class='modal-dialog remove-student-dialog']//h4
+Name_sort:xpath://*[@class='header sort_user_lastName']/a
+Login_sort:xpath://*[@class='hidden-xs header sort_user_logins']/a
+btn_x:xpath://div[@class='modal-dialog remove-student-dialog']//button[contains(text(),'x')]
+btn_cancel:xpath://div[@class='modal-dialog remove-student-dialog']//button[contains(text(),'Cancel')]
+modal_window:xpath://*[@id='deleteStudent-mdl']
+ml_graph_title:css:.mastery-level-distribution .title
+numOfStudentOn_yaxis:xpath://div[@id='mastery_level_distribution_chart']//*[name()='svg']//*[name()='g']//*[name()='text' and contains(text(),'Number of Students')]
+ml_one_to_eight:xpath://div[@id='mastery_level_distribution_chart']//*[name()='svg']//*[name()='g']//*[name()='text' and @text-anchor='middle' and @fill='#000000']
+avg_mastery_level:css:.graph-average .title
+avg_mastery_level_number:css:.ml
+txt_strength_chapterName: css: .strengths-bars.bar-graph-container .content .unit:nth-of-type(1) h4
+lst_strengthChapters: css: .strengths-bars.bar-graph-container .unit>h4
+lst_weaknessesChapters: css: .weaknesses-bars.bar-graph-container .unit>h4
+lst_classAverageMasteryLabel: css: .strengths-bars.bar-graph-container .unit .value
+txt_StrenghtChapter_classAverageMasteryLabel: css: .strengths-bars.bar-graph-container .unit:nth-of-type(1) .value
+txt_WeaknessChapter_classAverageMasteryLabel: css: .weaknesses-bars.bar-graph-container .unit:nth-of-type(1) .value
+txt_strength_noOfStudents: css: .strengths-bars.bar-graph-container .content .unit:nth-of-type(1) small
+lst_strength_noOfStudents: css: .strengths-bars.bar-graph-container .content .unit>small
+lst_weaknesses_noOfStudents: css: .weaknesses-bars.bar-graph-container .content .unit>small
+txt_strength_Message: css: .strengths-bars.bar-graph-container>div>strong
+txt_weakness_Message: css: .weaknesses-bars.bar-graph-container>div>strong
+txt_weakness_chapterName: css: .weaknesses-bars.bar-graph-container .content .unit:nth-of-type(1) h4
+txt_weakness_noOfStudents: css: .weaknesses-bars.bar-graph-container .content .unit:nth-of-type(1) small
+anchor_assignment_result:xpath:.//a[contains(text(),'Assignment Results')]
+qc_quiz:xpath:.//a[contains(text(),'${assignName}')]
+qc_quiz_list:xpath:.//td[@class='name']/a
+student_result:xpath:.//div[@class='container assignment-summary']//h2[text()='Student Results']
+qc_quiz_score:xpath:.//a[contains(text(),'${assignName}')]/../../td[6]
+heading_QCAssignment:css:.questionCollectionResults-title
+default_startdate:xpath:(//span[@class='name-timestampAvailableDate action headerSortDown'])[1]
+num_of_question_qcquiz:xpath:.//td[@title='${assignName}']/div[@class='text-muted']
+startdate_enddate:xpath:.//td[@title='${assignName}']//../td[@class='hidden-xs date']/span
+qc_quiz_title:xpath:.//td[@title='${assignName}']
+qc_avg_score:xpath:.//td[@title='${assignName}']/../td[6]
+student_name_link:xpath:.//table[contains(@class,'studentUsage-table')]//td[@class='name']//a
+txt_no_of_quizzes:xpath:(//*[@class='secondary top']//em)[1]
+txt_avg_quizzes:xpath:(//*[@class='secondary top']//em)[2]
+txt_no_of_question:xpath:(//*[@class='secondary bottom']//em)[1]
+txt_avg_question:xpath:(//*[@class='secondary bottom']//em)[2]
+#Av_mastery:xpath:(//div[@class='graph-mastery-level-quiz clearfix']//*[name()='svg']//*[name()='g'])//*[name()='g']//*[name()='rect' and @fill='#fc6e00']
+Av_mastery:xpath:(//div[@class='graph-mastery-level-quiz clearfix']//*[name()='svg']//*[name()='g'])//*[name()='g']//*[name()='rect'][1]
+Graph_master:xpath:(((//div[@class='graph-mastery-level-quiz clearfix']//*[name()='svg']//*[name()='g'])//*[name()='g'])//*[name()='g']//*[name()='path' and @stroke='#fc6e00'])[1]
+Graph_Text:xpath://div[@class='graph-mastery-level-quiz clearfix']//*[name()='svg']//*[name()='g']//*[name()='g']//*[name()='text' and contains(text(),'Number of Quizzes Taken')]
+ml_one_to_eight_Graph:xpath: //div[@class='graph-mastery-level-quiz clearfix']//*[name()='svg']//*[name()='g']//*[name()='text' and @text-anchor='end' and @fill='#000000']
+Auto_Class_1705: id: ember4702
+Ques_lib_btn: id: ember17635
+lnk_stud_1:xpath://table[contains(@class,'studentUsage-table')]//td[2]//a/div[1]
+lnk_stud_2:xpath:(//table[contains(@class,'studentUsage-table')]//td[@class='name']//a)[2]
+txt_studentName:css:.student-name
+lnk_viewQuizHistory: css: .ember-view.pull-right.view-quiz-history
+gph_master_level:xpath:(//div[@class='graph-mastery-level-quiz clearfix']//*[name()='svg']//*[name()='g'])[1]
+txt_stu_quiz:xpath:.//*[@class='primary']/em
+gph_verify:xpath://div[@class='graph-mastery-level-quiz clearfix']//*[name()='svg']
+gph_line_verify:xpath:((//div[@class='graph-mastery-level-quiz clearfix']//*[name()='svg']//*[name()='g'])//*[name()='g'][1])//*[name()='g'][3]
+txt_no_of_quizzes:css:.secondary.top>div>em
+txt_avg_quizzes:xpath:.//*[@class='secondary top']/div[3]/em
+txt_stu_below_text:xpath:.//*[@class='primary']/span
+txt_usage_gph: xpath: .//h4[@class='center']
+rect_usage_gph:xpath:.//*[@id='chart_usage']/div
+txt_usage_gph_dates:xpath:((.//*[name()='svg'])[3]//*[name()='g'])[11]
+txt_edit_class:xpath:.//a[contains(text(),'Edit Class')]
+input_startDate:css:#dpd1
+txt_y_axis_top:xpath:.//*[@id='chart_usage']//*[name()='svg']//*[name()='g'][5]
+txt_overall_ques_below:xpath:.//*[@id='chart_usage']//*[name()='svg']//*[name()='g'][2]//*[name()='text' and contains(text(),'Questions Answered')]
+txt_overall_ques_undr:xpath:(.//*[@id='chart_usage']//*[name()='svg']//*[name()='g'][1])[3]//*[name()='text' and contains(text(),'Questions Answered')]
+rect_orange_overall:xpath:.//*[@id='chart_usage']//*[name()='svg']//*[name()='circle' and @fill='#28839a'][1]
+gph_overall_circle:xpath:(//*[@id='chart_usage']//*[name()='svg']//*[name()='g'][2]//*[name()='g'][2])[2]//*[name()='circle'][1]
+txt_gph_hover_date:xpath:(//li[contains(@class,'google-visualization-tooltip')]/span)[1]
+txt_gph_hover_Ques:xpath:(//li[contains(@class,'google-visualization-tooltip')]/span)[2]
+txt_gph_hover_value:xpath:(//li[contains(@class,'google-visualization-tooltip')]/span)[3]
+misconception_question_list:css:.qc-wrapper-title .text
+misconception_alert:css:.no-results
+bloom_texonomy:xpath://*[@class='term-taxonomies']//div[contains(.,'Bloom')]/ul/li
+misconception:css:.misconception.hidden-xs
+lnk_manageAssignment:xpath://h2[@id]//a
+lnk_mAssignment:xpath://*[@id='manageAssignments']/a

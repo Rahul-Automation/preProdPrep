@@ -1,0 +1,17 @@
+# Sakurai Chapter Selection Page
+# elementname: locatortype: locatorvalue
+anchor_viewAssignment:xpath:.//a[@id='link-assignmentResults']
+heading_MLAssignment:xpath:.//div[@id='mlAssignmentResults']/div/h3
+AssignmentTable_field:xpath:.//table[@class='table table-striped tablesorter assignmentResults-table']//th//span
+target_Mastery:xpath:(//div[@class='text-muted' and contains(text(),'Target Mastery')])[1]
+list_Assignment_Name:xpath:.//table[@class='table table-striped tablesorter assignmentResults-table']/tbody/tr[${input}]/td[2]
+list_table_Data:xpath:.//table[@class='table table-striped tablesorter assignmentResults-table']/tbody/tr
+name_header_Sort:xpath://table[@class='table table-striped tablesorter assignmentResults-table']/thead/tr/th[2]/a/span
+list_NO_Student_Completed:xpath:.//div[@id='mlAssignmentResults']/div/table/tbody/tr[${input}]/td[6]
+NoCompleted_header_Sort:xpath://table[@class='table table-striped tablesorter assignmentResults-table']/thead/tr/th[6]/a/span
+list_Start_Date:xpath:.//*[@id='mlAssignmentResults']//table/tbody//tr[${input}]/td[4]/span
+StartDate_header_Sort:xpath://table[@class='table table-striped tablesorter assignmentResults-table']/thead/tr/th[4]/a/span
+list_End_Date:xpath:.//*[@id='mlAssignmentResults']/div/table/tbody/tr[${input}]/td[4]/span
+EndDate_header_Sort:xpath://table[@class='table table-striped tablesorter assignmentResults-table']/thead/tr/th[5]/a/span
+default_EndDate:xpath:.//span[@class='name-timestampDueDate action headerSortDown']
+default_StartDate:xpath:.//span[@class='name-timestampAvailableDate action headerSortDown']

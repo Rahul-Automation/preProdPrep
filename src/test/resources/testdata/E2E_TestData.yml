@@ -1,0 +1,299 @@
+app_url: https://preprod-thepoint.hlrpbooks.com/
+
+environment: E2E
+
+E2E:
+  ins_email: miginstructor02
+  ins_password: instructor02
+  stu_email: migstudent04
+  stu_password: student04
+  class_name: myMigration Class
+  class_name1: 2/27 Winter Class
+  product_name: NCLEX-RN
+  category_name: 
+       nursing_topics: Nursing Topics
+       client_needs: Client Needs
+       nursing_concept: Nursing Concepts
+  chapter_name: 
+        nursing_topic: Oncologic Disorders
+        client_needs: Reduction of Risk Potential
+        nursing_concept: Cellular Regulation
+  num_of_question: 5
+  
+  
+NCLEX-RN:
+   multi_topic:
+        chapter_1: Infant
+        chapter_2: Preschooler
+        chapter_3: Adolescent
+  
+Hinkle:
+   multi_topic:
+        chapter_1: Pain Management
+        chapter_2: Balance and Disturbance
+        chapter_3: End-of-Life Care
+
+QC_Folder:
+    error_msg: This Question Collection name already exists. Please select a new name.
+  
+QC_Timed:
+    qc_folder: ForAutomationScript (6 questions)
+    num_of_question: 6
+    exam_num_of_question: 75
+  
+School_name: Misc-Default Filler
+
+chapter_name:
+     hidden: Prioritization and Delegation
+
+create_question:
+      nclex:
+         category: FUNDAMENTALS OF NURSING
+         chapter: Basic Physical Care
+         
+Create_Your_Quiz:
+      instruction:
+        inst_1: Content in development will not appear below. 
+        inst_2: For multi-topic assignments, separate assignments will be created for each topic selected.
+         
+manage_exam:
+      instruction:
+        inst_1: Choose from the options below to start creating a comprehensive NCLEX exam assignment or to manage the default settings for all exams.
+        inst_2: Manage the default settings for exam assignments and students' practice exams. Most settings can be customized when creating exam assignments.
+
+Bookmark:
+     Whatthis_messageQC: You can bookmark questions in Answer Keys to study later under the "Bookmarked Questions" tab of your Quiz History & Bookmarked Questions page. You can bookmark up to 200 questions.
+     Whatthis_messageML: You can bookmark questions during Mastery Level quizzing and in the Answer Key to study later under the "Bookmarked Questions" tab on your Quiz History & Bookmarked Questions page. You can bookmark up to 200 questions.
+     Whatthis_messageEXAM: You can bookmark questions during exams and in the Answer Keys to review later under the "Bookmarked Questions" tab on your Quiz History & Bookmarked Questions page. You can bookmark up to 200 questions.
+     Whatthis_message_Answer_Keys_EXAM: You can bookmark questions during exams and in the Answer Keys to review later under the "Bookmarked Questions" tab on your Quiz History & Bookmarked Questions page. You can bookmark up to 200 questions.
+     Whatthis_message_Answer_Keys_QC: You can bookmark questions in Answer Keys to study later under the "Bookmarked Questions" tab of your Quiz History & Bookmarked Questions page. You can bookmark up to 200 questions.
+remove_Question:
+     removeMessage: Do you want to remove this question from your Bookmarked Questions?
+     
+Questionlimit:
+     Questionlimit_message: You have reached the limit on the number of questions you can bookmark. You can remove questions from your Bookmarked Questions list to make room for additional questions.
+
+#app_url: http://sakurai-webapp-uat.elasticbeanstalk.com/
+#app_url: https://sakurai-webapp-uat.prep-u.com/
+questionCollectionName: QC
+questionText: Automated Test Question createdOn
+chapterSelected: Atomic Theory and Atomic Structure
+chapterSelected1: Thermodynamics
+assignmentName: AutoAssign
+examName: Smoudgil
+thePoint:
+  ins_email: smoudgil
+  ins_password: Password1
+  stu_email: sumitastudent
+  stu_password: student
+
+#E2E:
+  ins_email: miginstructor02
+  ins_password: password01
+  stu_email: sumitastudent
+  stu_password: password01
+  
+users:
+  ap_subject: Advanced Placement
+  bio_subject: Biology
+  med_subject: Nursing & Medical
+  http_auth:
+    username: sakurai_user
+    password: DEJKGDQPQZOQ
+  instructor:
+    class=0:
+      name: Test Ins
+      first_name: Test
+      last_name: Ins
+      username: test.instructor.zero@prepu.com
+      password: Password1
+    class=1:
+      name: Ins Test
+      first_name: Ins
+      last_name: Test
+      username: test.instructor.one@prepu.com
+      password: Password1
+      class_name: AutomationQA 2015
+      class_term: Summer 2015
+      class_code: Test2289
+      class_name1: PNAutomation QA
+    class>3:
+      name: Auto Ins
+      first_name: Auto
+      last_name: Ins
+      username: auto.instructor@prepu.com
+      password: Password1
+      PNClass: PN Class101
+      RNClass: RN Class101
+      PNClass1: NCLEX PNClass
+      RNClass1: NCLEX RNClass
+      class_name: Fall 2015
+      class_code: Ins2287
+      class_name1: Summer 2015
+      class_name2: myPrepu Class
+      class_name2a: Pych 101
+      class_term: Fall
+      class_name_1: Winter 2015
+      class_code_1: Ins2288
+    class>4:
+      name: Sumita Moudgil
+      first_name: Sumita
+      last_name: Moudgil
+      username: sumita.instructor@prepu.com
+      password: Password1
+      class_name: Manual1208
+      class_name1: Chem 101
+      class_code: Instructor2296
+      class_term: Fall 2015
+    Ins:  
+      username: testinstructor01@prepu.com
+      password: Password1
+      first_name: TestAccount
+      last_name: Inst
+      class_name: TestClass NCLEX RN
+      className: July Class  
+  student:
+    subject: Advanced Placement
+    class=0:
+      name: Test Student
+      first_name: Test
+      last_name: Student
+      username: test.student.self@prepu.com
+      password: Password1
+      username1: qa.student.self@prepu.com
+      password1: Password1
+    class=1:
+      name1: Student Test
+      first_name1: Student
+      last_name1: Test 
+      username1: test.student.one@prepu.com
+      password1: Password1
+      username2: test.student1@prepu.com
+      password2: Password1
+    class>3:
+      name: Auto Student
+      first_name: Auto
+      last_name: Student
+      username: auto.student@prepu.com
+      password: Password1
+      class_name: Summer 2015
+      email_address: auto.student@prepu.com
+      PNClass: PN Class101
+      RNClass: RN Class101 
+    class>4:
+      name: Sumita Moudgil
+      first_name: Sumita
+      last_name: Moudgil
+      username: sumita.self@prepu.com
+      password: Password1
+      class_name: Class Laureen PUSAK_1789
+    Exam:
+      name: Sumita Moudgil
+      first_name: Sumita
+      last_name: Moudgil
+      username: sumita.self@prepu.com
+      password: Password1
+      class_name: Sak TestClass
+      class_name1: NCLEX_0902
+    ExamIns:
+      name: Sumita Moudgil
+      first_name: Sumita
+      last_name: Moudgil
+      username: sumita.instructor@prepu.com
+      password: Password1
+      class_name: Sak TestClass
+      class_name1: NCLEX_0902
+    Stu:
+      username: testuser01@prepu.com
+      password: Password1
+      class_name: TestClass NCLEX RN
+      className: July Class
+class:
+  name: AutoClass
+  product: AP-Chemistry
+  term: Winter 2017
+  date:
+    start: 19
+    end: 25
+  school: Fairbanks Building Educational Success Together
+   
+  
+class2:
+  name: AutoTest1
+  futureAssignment: futureQuiz
+  pastAssignment: pastQuiz
+  availAssignment: avaiQuiz
+
+#school: Fairbanks Building Educational Success Together
+# Following details are to create assignments by Instructor
+MLAssignment:
+  futureAssignment: futureQuiz
+  Chapter1: 1_ Atomic Theory and Atomic Structure
+  availAssignmentWithPoint: availAssignmentWithPoint
+  Chapter2: 6_ Reaction Types
+  availAssignmentWithUngraded: availAssignmentWithUngraded
+  Chapter3: 8_ Equilibrium
+  availAssignmentWithHighTargetML: availAssignmentWithHighTargetML
+  Chapter4: 2_ Chemical Bonding
+  pastDueAssignment: pastDueAssignment
+  Chapter5: 5_ Solutions
+
+QCAssignment:
+  defaultPointValue: 100
+
+# Following details are to send the emailable report to all the recipients after test execution
+email:
+  send: yes
+  recipients: 
+    recipient1: deepakkumar1@qainfotech.com
+    recipient2: nandanchhabra@qainfotech.com
+
+#Following details are necessary for capturing screenshots
+screenshot:
+  takeScreenshot: yes
+  dirpath: "Prep U Logs/screen-shot"
+  
+  #Following details are necessary for reset user
+resetUser:
+  host: 172.25.42.237
+  username: sakurai
+  port: 22
+  privateKeyPath: "src/test/resources/privateOpenSH"
+  targetDirPath: "/var/www/sakurai_backend/current"
+  resetCommand: "php app/console sakurai:user:reset"
+  env: prod
+  
+  #Following details are necessary for restart Automation
+restartAutomation:
+  host: 172.28.146.165
+  username: ubuntu
+  port: 22
+  privateKeyPath: "src/test/resources/privateOpenSH"
+  targetDirPath: "/var/www/sakurai_backend_automation/current"
+  restartCommand: "sudo service php5-fpm restart"
+  env: prod
+warnings:
+  onJoinAClassPage: Please enter a valid class code. If you aren't sure what your code is, please contact your instructor.
+confirmations:
+  onInstAssignMLquiz:
+    confirmMsg: Your assignment is now live!
+    confirmExam: Exam created!
+  onInstAssignQCquiz:
+    confirmMsg: Your assignment is now live!
+    
+text:
+  onManageAssignmentPage_Step1: Looking for an existing assignment? 
+
+propertyfilepath: "./src/test/resources/testdata/Testdata.properties"
+
+# The following items hold the Question text and part of question to be seached through search box: AP_Chemistry
+Search_Library:
+  FullQuestionText1: Which statement is true about the composition of the nucleus of the atom?
+  Question_Part: periodic table
+  FullQuestionText2: What types of bonds make up a triple bond?  
+  
+# The following items hold the categories used for filtering the search results
+Category1: CHAPTER
+Category2: CLIENT NEED
+Category3: NURSING CONCEPT
+Category2: BLOOM'S TAXONOMY

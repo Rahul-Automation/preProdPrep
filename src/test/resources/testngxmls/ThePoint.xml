@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="PrepUSakurai_Test_suite" preserve-order="true" >
+<test name="ThePoint1_Interation_Tests_With_Sakurai" preserve-order="true">
+<classes>
+<class name="com.qait.sakurai.automation.tests.thePointIntegration.thePointIntegration_SSO_tests"></class>
+</classes>
+</test>
+</suite>

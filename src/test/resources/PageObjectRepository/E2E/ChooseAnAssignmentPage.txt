@@ -1,0 +1,15 @@
+# Sakurai  choose An Assignment Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+#Step1
+iframe: xpath: //*[@id='prepu-frame']
+txt_chooseAnAssignmentHeader: css: .step1.stepsContent>h2
+txt_masteryLevel: xpath: //strong[contains(.,'Mastery Level Assignment')]
+txt_quesCollect: xpath: //strong[contains(.,'Question Collection Assignment')]
+radioBtn_masteryLevel: id: masteryLevel
+radioBtn_quesCollect: xpath: .//*[@id='questionCollection']
+btn_continue1:xpath: //*[@id='action-1']
+txt_existingAssignment: xpath: //p[@class='manage-assignments']
+lnk_manageAssignments: xpath: .//a[text()='Manage Assignments'] 
+radioBtn_masteryLevelAssignment: xpath: //*[@id="masteryLevel"]

@@ -1,0 +1,11 @@
+# Sakurai  Join A Class page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+txt_pageHeader: xpath: //h1[contains(.,'Join Class as Co-instructor')]
+inp_classCode:css:#classCode
+btn_joinClass:css:.btn.btn-blue.auto-center
+sucess_header:css:.section-header.dark
+confirmation_msg:css:.container.enroll-container>div
+error_message:css:.error
+return_to_my_classes:xpath:.//button[contains(text(),'Return to my classes')]

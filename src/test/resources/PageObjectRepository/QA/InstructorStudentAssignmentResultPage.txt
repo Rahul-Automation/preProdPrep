@@ -1,0 +1,30 @@
+# PrepU
+# elementname: locatortype: locatorvalue
+assignment_Name:xpath:.//*[@id='mlAssignmentResults']//table/tbody//a[text()='ML Assignment One']
+header_student_results:xpath:.//div[@class='container assignment-summary']/div[contains(@class,'student-result')]/h2
+quiz_name:xpath:(//td[@class='quiz-name'])[1]
+quiz_name1:xpath://td[@class='quiz-name']
+NumOfQuiz_list:xpath:(.//td[@class='hidden-xs'])[1]
+timeToComplete_list:xpath:(.//td[@class='hidden-xs'])[3]
+assignment:css:.name>h2
+class_name:css:.classes-list .highlight
+class_avg:css:.ml>div
+num_of_student:css:.details>h3
+chapter_name:css:.chapter
+header_sort_name:css:.header.sort_user_fullName>a
+table_student_result:xpath:.//div[@class='margin-top-55 student-results']//table
+table_student_result_header:xpath:.//div[@class='margin-top-55 student-results']//table//th//span
+total_num_of_question:xpath:(//div[@class='margin-top-55 student-results']//table//td[@class='hidden-xs'])[1]
+num_of_question_correct:xpath:(//div[@class='margin-top-55 student-results']//table//td[@class='hidden-xs'])[2]
+table_TotalQuesForStudent:xpath://*[text()='${Name}']/following-sibling::td[1]
+table_CorrectQuesForStudent:xpath://*[text()='${Name}']/following-sibling::td[2]
+table_ScoreForStudent:xpath://*[text()='${Name}']/following-sibling::td[3]
+table_TimeTakenForStudent:xpath://*[text()='${Name}']/following-sibling::td[4]
+table_AnsKeyViewForStudent:xpath://*[text()='${Name}']/following-sibling::td[5]
+score_column:xpath://div[@class='margin-top-55 student-results']//table//td[5]
+student_name:xpath://div[@class='margin-top-55 student-results']//table//td[2]
+# Performance By Chapter
+txt_chapterName: css: .unit>h4
+txt_classAverageAndTargetML: css: .unit figure:nth-of-type($) .value
+color_classAverageAndTargetML: css: .unit figure:nth-of-type($) .line
+answer_key_view:xpath://div[@class='margin-top-55 student-results']//table//td[7]

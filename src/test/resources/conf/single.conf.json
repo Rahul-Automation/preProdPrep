@@ -1,0 +1,15 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "deepakmanik1",
+  "key": "p4aGakHoYrGxyqyjAyeM",
+
+  "capabilities": {
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    }
+  }
+}

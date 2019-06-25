@@ -1,0 +1,13 @@
+# Sakurai Login Header UI Container
+# elementname: locatortype: locatorvalue
+
+drpdwn_username: xpath: //a[@class='dropdown-toggle username']
+drpdwn_myClasses: xpath: //a[@class='dropdown-toggle']
+lnk_signOut: xpath: //li[@class='logout']
+link_myProfile: xpath: //*[text()='My Profile']
+link_help: xpath: .//ul[@class='dropdown-menu']//a[text()='Help']
+link_viewAllClasses: xpath: //ul[@class='dropdown-menu']//a[text()='View all classes']
+OnlyClassLink:xpath:(//ul[contains(@class,'menu-center')]//ul[@class='dropdown-menu']//a)[1]
+signOutDropDown: xpath: //ul[contains(@class,'menu-username')]/li/a
+signOut: xpath: //ul[contains(@class,'menu-username')]/li/ul//a[text()='Sign Out']
+prepULogoHeader:xpath:(//div[@class='login-header']//a)[1]

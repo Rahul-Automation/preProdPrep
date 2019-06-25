@@ -1,0 +1,8 @@
+# Sakurai  Class Joined Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+txt_pageHeader: xpath: .//h3[contains(text(),'Class Enrollment Successful')]
+txt_paragraphText: xpath: //*[contains(text()='You have successfully joined')]
+btn_continue: xpath: .//a[text()='Continue']
+link_viewresult: xpath: .//table[@class='table']//td[contains(text(),'${className}')]/..//a

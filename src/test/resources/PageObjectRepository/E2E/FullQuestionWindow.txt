@@ -1,0 +1,8 @@
+# Sakurai Full Question Window
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+txt_quesDesOnWindow: css: #fullQuestion h2
+radioBtn_questionOptions: css: #fullQuestion li label
+btn_fullQuesWindowClose: css: #fullQuestion .btn.btn-default
+btn_fullQuesWindowCross: css: #fullQuestion button

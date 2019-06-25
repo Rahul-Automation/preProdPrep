@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="NewPBI_Based_On_Past_Release_Test_suite" preserve-order="true"	>
+  <test name="PBI_13822_Bookmark_Questions_On_ML_Question_Page">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.NewTestCasesAsBasedOnPastReleases.PBI_13822_Bookmark_Questions_On_ML_Question_Page"></class>
+		</classes>
+	</test> 
+	
+	<test name="PBI_13823_Bookmark_Questions_QC_Answer_Keys_Page">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.NewTestCasesAsBasedOnPastReleases.PBI_13823_Bookmark_Questions_QC_Answer_Keys_Page"></class>
+		</classes>
+	</test> 
+	
+	<test name="PBI_14075_Pagination_On_Bookmark_Question_Page">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.NewTestCasesAsBasedOnPastReleases.PBI_14075_Pagination_On_Bookmark_Question_Page"></class>
+		</classes>
+	</test> 
+	
+	<test name="PBI_14319_Romove_Bookmark_Question_Functionality">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.NewTestCasesAsBasedOnPastReleases.PBI_14319_Romove_Bookmark_Question_Functionality"></class>
+		</classes>
+	</test> 
+	
+	<test name="PBI_14337_Bookmark_Questions_Whats_This_On_Practice_Exam_Answer_Keys">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.NewTestCasesAsBasedOnPastReleases.PBI_14337_Bookmark_Questions_Whats_This_On_Practice_Exam_Answer_Keys"></class>
+		</classes>
+	</test> 
+	
+	<test name="PBI_15322_Bookmark_Limit_Upto_200_Question_Information_Popup_Remove_A_Bookmarked_Question_Then_Bookmark">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.NewTestCasesAsBasedOnPastReleases.PBI_15322_Bookmark_Limit_Upto_200_Question_Information_Popup_Remove_A_Bookmarked_Question_Then_Bookmark"></class>
+		</classes>
+	</test> 
+	
+	<test name="PBI_15328_Whats_This_Popup_Message_During_ML_Quiz">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.NewTestCasesAsBasedOnPastReleases.PBI_15328_Whats_This_Popup_Message_During_ML_Quiz"></class>
+		</classes>
+	</test> 
+	
+	<test name="PBI_15329_Whats_This_Popup_Message_On_Answer_Keys_Page">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.NewTestCasesAsBasedOnPastReleases.PBI_15329_Whats_This_Popup_Message_On_Answer_Keys_Page"></class>
+		</classes>
+	</test>
+	
+	<test name="PBI_15330_Whats_This_Popup_Text_During_Exam.java">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.NewTestCasesAsBasedOnPastReleases.PBI_15330_Whats_This_Popup_Text_During_Exam"></class>
+		</classes>
+	</test>
+	
+</suite>

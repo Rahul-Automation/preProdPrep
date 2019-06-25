@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="PrepUSakurai_Test_suite" preserve-order="true" >
+<test name="Instructor_Assign_MLQuiz_w_1_class" preserve-order="true">
+<classes>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.AssignMLQuiz.DeleteQCAndMLAssignment_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.AssignMLQuiz.NewInstructorLanding_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.AssignMLQuiz.MyClassesPage_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.AssignMLQuiz.CreateClass_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.AssignMLQuiz.AssignMLQuiz_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.AssignMLQuiz.EditAssignment_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.AssignMLQuiz.ViewStudentHMIDPage_Test"></class>
+</classes>
+</test>
+</suite>

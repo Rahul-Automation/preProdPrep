@@ -1,0 +1,52 @@
+# Sakurai Quiz Attempt Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+iframe: xpath: .//*[@id='prepu-frame']
+header_autoshutoff: xpath: .//*[@id='auto-shutoff']//div[@class='modal-header']/h4
+btn_close: xpath: .//*[@id='auto-shutoff']//div[@class='modal-header']/button
+btn_submitAnswer: xpath: //button[@type='submit']
+lbl_answerOne: xpath: (//label)[1]
+radio_answerOne: xpath: (//label/input)[1]
+txt_progressBar: xpath: //*[@class='question-status-report']
+lbl_quizTimer:xpath:(//span[@class='time'])[1]
+txt_question: css: .container.cf.quiz-container h2
+lst_answerOptions: css: .question-container>li>label
+btn_answerOption:css: .question-container>li:nth-of-type($)>label>input
+#lst_answerOptionsDD:xpath: //ul[@class='question-container-dragn-drop ui-sortable']/li
+#btn_answerOption:xpath://ul[@class='question-container-dragn-drop ui-sortable']/li[$]/label
+modal_reviewAns: xpath: .//div[@id='confirm-review-submit']//h4
+modalbody_text: xpath: .//div[@id='confirm-review-submit']//p[contains(text(),'${text}')]
+btn_reviewpopup: xpath: .//div[@id='confirm-review-submit']//button[contains(text(),'${buttonName}')]
+
+#DragNDrop Question
+drag_DropAnswerOption: css: .question-container-dragn-drop.ui-sortable li:nth-of-type($) .item
+drag_DropAnswerOption1: css: .question-container-dragn-drop.ui-sortable li:nth-of-type($)
+question_type: xpath: .//div[@class='container cf quiz-container']//ul
+lst_dragnDrop_answersOption: css: .question-container-dragn-drop.ui-sortable>li .item .drag-text.pull-left
+chkbox_flag: xpath: .//div[@class='flagged']/input
+chkbox_bookmark: xpath: .//div[@class='bookmark']/input
+
+#FIB Question
+input_box:css:input[name='answer']
+btn_submit:css:#save-results
+txt_error:css:#answer-error
+txt_fib_question:css:.ember-view>h2
+
+#Multiple Choice Question
+chkbox_answer:css:.question-container>li>label>input
+
+#HotSpot Questions
+txt_hotspot:css:.instruction-label.top
+img_area: classname: bg
+img_clickable_area:css:.clickable-area
+btn_submit:css:#save-results
+
+alert_popup: xpath: .//div[@id='progress-alert']
+txt_alert_header: xpath: .//div[@id='progress-alert']//div[@class='exam-status red']//span
+txt_alert_body: xpath: .//div[@id='progress-alert']//div[@class='modal-dialog modal-sm']//div[@id='progress-alert-body']//b
+bttn_alert: xpath: .//div[@id='progress-alert']//div[@class='modal-dialog modal-sm']//button[text()='${button_label}']
+bttn_stopthisexam: xpath: .//button[@id='submitExam']
+lnk_exitQuiz:xpath: .//a[contains(@class,'exit-quiz')]
+NCLEX-RN_txt_currentQuestion: xpath: .//div[@class='quiz-quizzer-question']
+Hinkle_txt_currentQuestion: xpath: .//div[@class='quiz-quizzer-question']/p
+txt_questionNumber: xpath: .//h2[@class='question-status-report']

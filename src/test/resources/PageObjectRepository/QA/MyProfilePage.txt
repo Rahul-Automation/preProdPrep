@@ -1,0 +1,17 @@
+# Sakurai My Profile Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+txt_EditProfileHeader: classname: section-header
+inp_firstName: id: firstName
+inp_lastName: id: lastName
+btn_saveChanges: id: profile-submit
+txt_successMsg: classname: toast-message
+txt_firstErrMsg: id: firstName-error
+txt_lastErrMsg: id: lastName-error
+lnk_changePassword: classname: update-pwd
+inp_curPassword: id: password
+inp_newPassword: id: newPassword
+inp_retypePassword: id: retypePassword
+txt_newPwdErrMsg: id: newPassword-error
+txt_retypPwdErrMsg: id: retypePassword-error

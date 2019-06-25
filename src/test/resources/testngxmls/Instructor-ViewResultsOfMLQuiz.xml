@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="0" name="PrepUSakurai_Test_suite" preserve-order="true" >
+<test name="Instructor_View_results_of_MLQuiz" preserve-order="true">
+<classes>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.NavigateToAssignments_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.AssignmentsResultSummary_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.ViewMLAssignment_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.ViewMLAssignmentResult_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.ViewStudentUsage_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.ViewStrengthAndWeakness_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.HowMyClassDoingPage_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.MLGraphVerifications_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.VerifyNumberOfStudentUnderOverallUsage_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewResultsOfMLQuiz.VerifyQuizDataIfInstructorRemovedStudentFromAClass_Test"></class>
+</classes>
+</test> 
+</suite>

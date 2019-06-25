@@ -1,0 +1,9 @@
+# Sakurai  Join A Class as Student page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+txt_pageHeader: xpath: .//*[@id='my-classes-faketab']//a[text()='+ Join a Class']
+txt_joinaclass: xpath: (.//a[text()='Join a Class'])[1]
+inp_classCode: xpath: .//*[@id='Passcode']
+btn_joinClass: xpath: .//*[@id='my-classes-faketab']//input[@value='Enroll']
+txt_warningMsg: xpath: //div[@class='error']

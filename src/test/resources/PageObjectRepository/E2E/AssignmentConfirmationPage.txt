@@ -1,0 +1,21 @@
+# Sakurai  Your Assignment is now live  Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+#Success Message
+iframe: xpath: .//*[@id='prepu-frame']
+type_exam: xpath: .//div[@class='details']//div[@class='highlight time-limit']/preceding-sibling::div[text()='Simulated automatic shut-off']
+time_exam: xpath: .//div[@class='details']//div[@class='highlight time-limit']/following-sibling::div[contains(text(),'${time}')]
+txt_assignConfirmTitle: xpath: .//h2[@class='title']
+txt_assignmentType: xpath: //h2[contains(.,'Mastery Level Assignment')]
+txt_assignmentName: xpath: //h2[contains(text(),'${assignment Name}')]
+highlight_classname: css: .classes-list .highlight
+list_classes: xpath: //span[@class='highlight']
+txt_availableAndDue: xpath: //div[@class='highlight']
+txt_questionCount: xpath: //span[@class='total_questions']
+btn_done: xpath: .//a[text()='DONE']
+timed_message:xpath:(//div[@class='highlight']/span)[1]
+thrshold_message: xpath: (.//div[@class='details']//strong)[2]
+
+txt_category: css: .category.capitalize
+txt_subcategory: xpath: .//div[@class='sub-category' and contains(text(),'${chapter}')]

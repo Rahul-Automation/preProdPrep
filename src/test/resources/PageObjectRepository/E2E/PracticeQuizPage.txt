@@ -1,0 +1,20 @@
+# Sakurai  Practice Quiz  Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+iframe: xpath: .//*[@id='prepu-frame']
+lnk_practiceQuiz: css: #menu-primary-navigation li:nth-child(5)
+dropdown_topic: xpath: .//*[@class='chapters']//select
+lnk_practiceQuizActive: xpath: //li[contains(@class,'menu-practiceQuiz active')]/a
+chk_chapter1: xpath: (.//*[@id='chapters']//input)[2]
+chk_chapterno: xpath: .//*[@id='chapters']//label[text()='${chapterName}']//input
+#Chapter selection
+txt_chapterHeader: css: container.cf>h1
+txt_unitHeader: xpath: lnk_Menu: xpath: //span[text()='${link text}']
+chk_chapters: css: #chapters li:nth-child(%) li:nth-child($) label
+lbl_chapters: xpath: .//*[@class='unit']//label
+txt_numOfQuesHeader: css: questions-desc h4
+btn_startQuiz: xpath: .//span[@id='quiz_start']/button
+sel_numberOfQuestion: xpath: .//*[@id='numberOfQuestionsLabel']/..//select
+txt_errorMssg: classname: error
+hidden_chapter:xpath:.//span[contains(text(),'${chapterName}')]//../span[contains(text(),'turned off by your instructor')]
+chk_Thermodynamics:xpath://*[@class='unit'][last()]/ul/li[last()]/label/input[@type='checkbox']

@@ -1,0 +1,53 @@
+# Sakurai Create Class Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+inp_school: id: InstitutionName
+inp_class: id: Name
+btn_createClass: xpath: .//input[@value='Create a Class']
+txt_successClass: css: .new-class-success>h3:nth-child(1)
+txt_classCode: css: .new-class-success>h2
+btn_continue: xpath: .//a[text()='Continue']
+btn_active: css: .active>a
+list_activeClasses: xpath: .//*[@id='active-classes']//th[text()='Class Name']/../../..//tbody//td[2]
+inactive_list: xpath: .//*[@id='inactive-classes']//th[text()='Class Name']/../../..//tbody//td[2]
+active_link_edit: xpath: //div[@id='active-classes']//a[@data-breadcrumb-name='${linkText}' and contains(text(),'Edit')]
+inactive_link_edit: xpath: //div[@id='inactive-classes']//a[@data-breadcrumb-name='${linktext}' and contains(text(),'Edit')]
+btn_save: xpath: .//input[@value='Save']
+active_radio: xpath: .//*[@id='IsActive']
+radio_inactive: xpath: .//*[@id='IsInactive']
+btn_inactive: xpath: .//a[text()='Inactive Classes']
+school_dropdown: xpath: .//li[@class='ui-menu-item']//a[text()='${schoolname}']
+
+txt_createClassHeading: xpath: //h1[text()='Create a Class']
+heading_txt: xpath: .//h1[text()='${ink_text}']
+btn_submit: xpath: .//span[@data-text='submit']/button
+btn_selectProduct: id: select2-select-product-container
+#inp_selectProduct: xpath: //div[@class='select2-search']/input[@class='select2-input']
+#inp_selectProduct: xpath: //*[@id="s2id_autogen1_search"]
+inp_selectProduct: xpath: //*[@id='select2-select-product-results']/li[contains(.,'${ink_text}')]
+inp_productSearchList: xpath: //span[@class='select2-match']
+txt_errorClassName: id: className-error
+txt_errorTerm: id: term-error
+txt_errorSchool: id: select_school-error
+inp_classname: css: #className
+inp_term: id: term
+list_schoolDropdownOptions: xpath: //li[contains(@class,'select2-results__option')]
+cal_startDate: id: dpd1
+cal_endDate: id: dpd2
+txt_date: xpath: //div[@class='datepicker-days']//td[text()='${date}']
+btn_searchSchool:xpath://span[@class='select2-selection select2-selection--single' and @aria-labelledby='select2-select_school-container' ]
+inp_searchSchool: xpath: //input[@class='select2-search__field']
+inp_searchSchool1: xpath: //input[@class='select2-search__field']
+listElements_inp: css: .select2-drop-active>div>input
+btn_submit: xpath: //span[text()='Submit']
+txt_sucessClass: xpath: //h1[text()='Class Created Successfully']
+txt_className: xpath: //div/p[contains(.,'${replaceText}')]
+txt_termName: xpath: //div/p[contains(.,'${replaceText}')]
+txt_classCode: xpath: //span[contains(.,'${replaceText}')]
+txt_userName: xpath: //a[contains(@class,'username')]
+txt_clsDesc: xpath: //p[contains(.,'To enroll your students in this course, instruct them to log into prep-u.com, click  on "Join a class" and have them enter the code above.')]
+btn_returnCls:xpath://a[@class='ember-view btn btn-blue']
+inp_searchSchool: xpath: //div[@id='select2-drop' and contains(@style,'block')]//input
+btn_submit: xpath: //button[text()='Submit']
+btn_inactive:xpath:.//button[text()='Inactive']
+joinclassasCoInstructor:css.section-header.dark

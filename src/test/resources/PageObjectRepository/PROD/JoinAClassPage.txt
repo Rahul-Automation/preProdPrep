@@ -1,0 +1,6 @@
+# Sakurai  Join A Class page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+txt_pageHeader: xpath: //h1[text()='Join a Class']
+

@@ -1,0 +1,31 @@
+# Sakurai  Your Assignment is now live  Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+#Success Message
+iframe: xpath: .//*[@id='prepu-frame']
+label_customizeExam: xpath: .//label[@for='customizeOverall']/strong
+label_assignExam: xpath: .//label[@for='AssignExam']/strong
+radio_customizeExam: xpath: .//*[@id='customizeOverall']
+btn_continue: xpath: .//button[text()='Continue']
+selected_manageExam: xpath: .//li[@class='menu-assignExam active']//a
+txt_header: xpath: .//h2[contains(text(),'${header}')]
+first_inst_txt: xpath: .//div[@class='instructions']
+second_inst_txt: xpath: .//input[@id='customizeOverall']/../following-sibling::div[2]
+
+# Customize Overall Exam Features Page
+header_txt: xpath: .//h2[contains(text(),'${header}')]
+radio_hideoverallthreshold: xpath: .//*[@id='hideOverallExamThreshold']
+radio_customizeoverallthreshold: xpath: .//*[@id='customizeOverallExamThreshold']
+label_hideoverallthreshold: xpath: .//label[@for='hideOverallExamThreshold']/strong
+label_customizeoverallthreshold: xpath: .//label[@for='customizeOverallExamThreshold']/strong
+save_continue_bttn: xpath: .//button[@aria-label='Save Settings']
+link_goback: xpath: .//a[@class='go-back']
+select_ml: xpath: .//label[@id='customizeOverallExamThresholdDescription1']/..//select
+
+#Assign a Comprehensive Exam Page
+nclex_proficiency_header: xpath: .//form[@id='assign-an-exam']//div[@class='assign-all-nclex-proficiency form-group']//a
+hidethreshold_radio: xpath: .//input[@id='hideProficiency']
+customized_nclex: xpath: (.//*[@id='assign-an-exam']//div[@class='customizeContent']//span)[2]
+customizeexam_radio: xpath: .//*[@id='customizeProficiency']
+ml_thrshold_select: xpath: .//div[@class='assign-exam-form']//ul//select

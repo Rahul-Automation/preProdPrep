@@ -1,0 +1,11 @@
+# Sakurai  Your Assignment is now live  Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+#Success Message
+iframe: xpath: .//*[@id='prepu-frame']
+lnk_examReportsActive: xpath: .//li[@class='menu-exam-reports active']//a
+lnk_examHistory: xpath: .//a[contains(@class,'exam-history')]
+heading_examHistory: xpath: .//div[@class='container exam-history']/h2
+link_finishquiz: xpath: (.//td[1]//a[@class='link-finish-quiz'])[1]
+label_completed: xpath: .//table[@class='table tablesorter examHistory-table']//tbody/tr[1]//span[@class='label label-success']

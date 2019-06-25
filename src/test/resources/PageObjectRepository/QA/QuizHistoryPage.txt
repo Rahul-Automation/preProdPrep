@@ -1,0 +1,45 @@
+# Sakurai  Quiz History Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+iframe: xpath: //*[@id='prepu-frame']
+tab_HistoryPage: xpath: .//a[@role='tab' and @aria-label='${tab}']
+txt_question: xpath: (//div[@class='question-result answer-key-choice']//h3/following-sibling::p)[${number}]
+search_sub_header: xpath: .//span[contains(text(),'Search')]
+dropdown_category: xpath: .//select[@name='quiz_categories']
+dropdown_sub_category: xpath: .//select[@name='quiz_subcategories']
+option_sub_category: xpath: .//select[@name='quiz_subcategories']//option
+value_category: xpath: .//span[@title='Choose a category']
+value_sub_category: xpath: .//span[@title='Filter by subcategory']
+labellist_quizzes: xpath: .//*[@class='container quiz-history']//table[@class='table tablesorter quizzesML-table']//td[@class='quiz-name tleft']//label[@class='gray'][1]
+quiz_list: xpath: .//*[@class='container quiz-history']//table[@class='table tablesorter quizzesML-table']//td[@class='quiz-name tleft']//a
+name_tablesort: xpath: .//table[@class='table tablesorter quizzesML-table']//th//span[text()='Name']/..
+link_all_quizzes: xpath: .//a[@class='view-quiz-history highlight-link']
+link_first_quiz: xpath: (.//a[@class='gray'])[1]
+link_first_final_quiz: xpath: (.//a[@class='link-finish-quiz'])[1]
+link_remove_question: xpath: (//div[@class='question-result answer-key-choice'])[${number}]//div[@class='bookmark bookmark-options']/a
+remove_bookmark_popup: xpath: (//div[@class='modal-dialog']//h4[contains(text(),'Remove Question?')])[${number}]
+btn_accept_remove_bookmark: xpath: (//div[@class='remove-bookmark-modal-buttons'])[${number}]//button/span 
+txt_pracQuizHistoryHeader: xpath: (//div[@class='tab-content']//h3)[1] | .//h3[contains(text(),'Quiz History')]
+txt_questCollectionHeader: css: quiz-history>h3:nth-child(5)
+txt_noPracticeQuizes: css: .quiz-history>h4:nth-child(3)
+txt_noQuestCollectionQuizes: css: .quiz-history>h4:nth-child(7)
+lnk_verifyNotes: xpath: .//h5/a[@aria-label='Notes']
+arrow_Notes: xpath: (.//div[@class='note']//a)[${questionNumber}]
+txtArea_Notes_verify: xpath: .//div[@class='content-note']/textarea
+btn_addNoteSaveEnabled: xpath: (.//button/span[@class='text'])[${questionNumber}]
+
+
+lst_mlAssignments: css: .table.tablesorter.quizzesML-table>tbody>tr
+lst_mlAssignmentNames: css: table.tablesorter.quizzesML-table>tbody>tr>td.quiz-name h5>a
+txt_mlAssigntName: css: .table.tablesorter.quizzesML-table>tbody>tr:nth-of-type($)>td.quiz-name>h5
+txt_mlAssigntStatus: css: .table.tablesorter.quizzesML-table>tbody>tr:nth-of-type($)>td:nth-of-type(2)
+txt_mlAssigntStartDate: css: .table.tablesorter.quizzesML-table>tbody>tr:nth-of-type($)>td:nth-of-type(3)
+txt_mlAssigntNoCorrect: css: .table.tablesorter.quizzesML-table>tbody>tr:nth-of-type($)>td:nth-of-type(4)
+txt_chapterName: css: .table.tablesorter.quizzesML-table>tbody>tr:nth-of-type($)>td.quiz-name>label
+lst_qcAssignments: css: .table.tablesorter.quizzesQC-table>tbody>tr
+lst_qcAssigntNames: css: .table.tablesorter.quizzesQC-table>tbody tr td.quiz-name h5 a:nth-of-type(1)
+txt_qcAssigntName: css: .table.tablesorter.quizzesQC-table>tbody>tr:nth-of-type($)>td.quiz-name>h5
+txt_qcAssigntStatus: css: .table.tablesorter.quizzesQC-table>tbody>tr:nth-of-type($)>td:nth-of-type(2)
+txt_qcAssigntStartDate: css: .table.tablesorter.quizzesQC-table>tbody>tr:nth-of-type($)>td:nth-of-type(3)
+txt_qcAssigntNoCorrect: css: .table.tablesorter.quizzesQC-table>tbody>tr:nth-of-type($)>td:nth-of-type(4)
+lnk_quizAndFinshQuiz: css: .table.tablesorter.quizzesML-table>tbody>tr:nth-of-type($)>td.quiz-name>h5>a

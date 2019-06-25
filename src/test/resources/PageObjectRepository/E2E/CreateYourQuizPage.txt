@@ -1,0 +1,66 @@
+# Sakurai  Create Your Quiz Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+
+#Step2
+iframe: xpath: .//*[@id='prepu-frame']
+sandbox_frame: xpath: .//*[@class='aamIframeLoaded']
+header_createQuiz: xpath: //h2[text()='Set up your assignment']
+label_choosecategory: xpath: .//div[@class='metadata-dropdown-container ']/label
+div_choosechapters: xpath: .//div[@class='select-multiple-chapters-header']
+description_choosechapters: xpath: .//div[@class='select-multiple-chapters-description']
+notes_choosechapters: xpath: .//div[@class='select-multiple-chapters-note']
+taxonomy_div: xpath: .//div[@class='select-multiple-term-taxonomies-header']
+taxonomy_description: xpath: .//div[@class='select-multiple-term-taxonomies-description']
+taxonomy_notes: xpath: .//div[@class='select-multiple-term-taxonomies-note']
+accordion_div: css: .accordion-menu-title
+category_div: xpath: //div[@class='accordion-menu-title' and contains(text(),'${panel}')]
+panel_div: xpath: .//div[@data-title='${category}']
+chapter_div: xpath: //div[contains(@class,'accordion-menu ember-view active')]//div[contains(text(),'${chapter}')]
+option_chapter_div: xpath: //div[contains(@class,'accordion-menu ember-view active')]//div[contains(text(),'${chapter}')]/parent::div
+selected_chapterdiv: xpath: .//div[@class='selection-tag-name' and contains(text(),'${Chapter}')]
+remove_selected_chapter: xpath: .//div[@class='selection-tag-name' and contains(text(),'${Chapter}')]/following-sibling::div[@class='selection-tag-remove']
+radio_assignExam: xpath: .//input[@id='AssignExam']
+header_exam_shutoff: xpath: .//*[@id='assign-an-exam']//div[@class='assign-auto-shutoff form-group']//label
+yes_shutOff_option: xpath: .//*[@id='assign-an-exam']//div[@class='assign-auto-shutoff form-group']//input[@id='autoShutoffYes']
+no_shutOff_option: xpath: .//*[@id='assign-an-exam']//div[@class='assign-auto-shutoff form-group']//input[@id='autoShutoffNo']
+dropdown_numOfQuestion: xpath: .//div[@class='assign-number-question enable']//select
+continue_btn: xpath: .//button[contains(text(),'Continue')]
+txt_creatYourQuizHeader: xpath: //h2[contains(.,'Create your quiz')]
+txt_creatYourExamHeader: xpath: .//div[contains(@class,'container assign-exam-container')]/h2
+txt_assignNameError:css:#assignName-error
+inp_assignmntName: xpath: //input[@id='assignName']
+inp_examName: xpath: //input[@id='assignmentName']
+lbl_noErrMessg: xpath: //label[@style='display: none;']
+sel_chapters: id: select-chapter
+sel_metadata: id: select-metadata
+sel_category: xpath: .//select[@id='select-category']
+select_sub_category: xpath: //div[@class="accordion-menu-title"]
+select_sub_category_option: xpath:	//div[@class="accordion-menu-title"]/following-sibling::div/div/div
+ml_continue: css: #action-2
+assignmentHeading:	xpath:	//div[@class="name" and starts-with(text(),'Mastery')]
+ml_confirmation: xpath: //h2[contains(text(),'Your assignment is now live!')]
+select_class_on_assignmentpage: xpath: //input[@value="1500005916"]
+button_assign: xpath: //button[@aria-label="Assign"]
+category_option: xpath: .//select[@id='select-category']/option
+drpdwn_selectQuestionCollection:xpath: .//select[@id='select-qc-step3']
+drpdwn_qc:xpath://*[@id='select-qc']/option[contains(.,'${value}')]
+lnk_whatIsThis: css: .whatisthis
+btn_continue2: xpath: (.//button[contains(text(),'Continue')])[2]
+btn_goBack:css:#assign-a-quiz .go-back
+span_firstTarget:xpath:(//div[@class='ml-line']//span[@class='ui-slider-line'])[1]
+span_lastTarget:xpath:(//div[@class='ml-line']//span[@class='ui-slider-line'])[last()]
+inp_targetAmount: id: amount
+lnk_preview: xpath: //a[text()='Preview']
+modal_preview: xpath: //div[@id='preview-modal']
+txt_title: xpath: //h4[contains(text(),'Ques')]
+txt_questionCount: xpath: //div[@class='question-numbers']
+list_previewQuestions: xpath: //div[@class='text']
+list_previewAnswers: xpath : //ul[@class='answer-choices']
+answerChoices: xpath: (//ul[@class='answer-choices'])[${value}]/li
+btn_close: xpath: //div[@id='preview-modal']//button[text()='Close']
+click_on_choose_category_dropdown: xpath: //*[@id="select2-select-category-container"]
+instructor_class_option:	xpath:	//label/span[text()='myMigration Class']/parent::label/preceding-sibling::div/input
+done_button: xpath: //div/a[contains(text(),"DONE")]
+

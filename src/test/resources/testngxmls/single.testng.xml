@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Single">
+    <test name="SingleTest">
+        <classes>
+            <class name="com.qait.sakurai.automation.tests.smokechecklist.Create_Mastery_Level_Assignment"/>
+            <!-- <class
+				name="com.qait.sakurai.automation.tests.smokechecklist.Create_Mastery_Level_Assignment"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.CreateNewQuestionTest"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.CreateQCTimedAssignmentAndStudentAttemptQCTimedAssignmentAndCompleteIt"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.InstructorAssignExamAndStudentAttemptAssignedExamAndCompleteIt"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.InstructorCreateUntimedQuestionCollectionAssignmentAndStudentAttemptCreatedAssignmentAndCompleteTheAssignment"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.InstructorHideChaptersFromQuestionLibraryAndPracticeQuiz"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.Question_Library_Test"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.StudentAttemptPracticeQuizInClientNeedCategoryTest"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.StudentAttemptPracticeQuizInNursingTopicCategoryTest"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.StudentTakePracticeExamAndLeavesIncompleteThatExam"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.StudentTakePracticeExamWithNoTimeLimitAndCompleteTheExam"></class>
+				<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.StudentTakePracticeQuizAndLeaveItInComplete"></class> -->
+        </classes>
+    </test>
+</suite>

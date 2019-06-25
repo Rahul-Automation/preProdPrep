@@ -1,0 +1,97 @@
+# Sakurai  Assignments List Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+#Instructor
+iframe: xpath: //*[@id='prepu-frame']
+txt_assignments: xpath: //h2[@class='instructor-assignments']
+lbl_quizName: xpath: //*[text()='${value}']
+pastDueOnAssignmentInfoPage:xpath:.//span[contains(text(),'Past Due')]
+pastDueForAnAssignment: xpath: //td[@title='${name}']/following-sibling::td[@class='status']/span[contains(text(),'Past Due')]
+completeStatusForAssign: xpath: //td[@title='${name}']/following-sibling::td[@class='status']/span[text()='Completed'] 
+QuizesOnPage: xpath: //td[@class='name tleft' and contains(@title,'Auto')]
+startDateForAssignment: xpath: //td[@title='${value}']/following-sibling::td[@class='hidden-xs hidden-sm date']
+endDateForAssignment: xpath: (//td[@title='${value}']/following-sibling::td[@class='hidden-xs date'])[1]
+noOfQuestionsForAssignment: xpath: //td[@title='${value}']/following-sibling::td[contains(@class,'total-questions')]
+scoreAndPointValue: xpath: (//td[@title='${value}']/following-sibling::td[@class='hidden-xs'])
+lbl_assignName: xpath: //h2[text()='${AssignName}']
+lbl_pastDue: xpath: //span[@class='label label-danger' and text()='Past due']
+btn_done: xpath: //span[text()='DONE']
+lbl_currentMastery: xpath: //div[contains(text(),"Current Mastery")]//div[@class='ml']
+lbl_targetMastery: xpath: //div[contains(text(),"Target Mastery")]//div[@class='ml']
+sel_numberOfQuestion: xpath: .//*[@class='assign-number-question enable']//select
+lbl_completedBy: xpath: //span[@class='highlight']
+lnk_practiceQuiz: xpath: //li[@class='menu-practiceQuiz']/a
+lnk_haid: css: #menu-primary-navigation li:nth-child(1) a
+lst_assignmentName: xpath: //*[@class='assignment-name ember-view']
+lst_deleteLink: xpath: //a[@class='delete-assignment']
+lst_editLink: xpath: //a[text()='Edit']
+btn_delete:xpath://*[text()='${assignmentName}']/../following-sibling::td[5]/a
+btn_edit: xpath: //*[text()='${assignmentName}']/../following-sibling::td[4]/a
+txt_deleteMessage1: xpath: //h4[contains(.,'Really delete')]
+txt_deleteMessage2: xpath: //div[text()="This action cannot be undone"]
+btn_confirmDelete: xpath: //button[text()='Delete']
+list_assignmentNames: xpath: //table[@id='assignments']//tr/td[@class='name']
+list_AssignmentStatus: xpath: //table[@id='assignments']//tr/td[@class='status']
+list_avilableDates: xpath: //table[@id='assignments']//tr/td[@class='hidden-xs hidden-sm']
+list_dueDate: xpath: //table[@id='assignments']//tr/td[@class='hidden-xs'][1]
+table_column:css:.action
+btn_doneAssignment:xpath://a[text()='DONE']
+lbl_pastDueAssign: xpath: //span[text()='Past due']
+
+input_assignment: xpath: .//th[@title='${assignmentName}']/..//input
+btn_continue: xpath: .//button[contains(text(),'Continue')]
+header_title: xpath: .//h2[@class='title']
+icon_pencil: xpath: .//*[@id='assign-a-quiz-step3']//div[@class='name']//a[@aria-label='edit']
+inp_edit: xpath: .//*[@id='nameEdited']
+delete_link: xpath: .//th[@title='${assignmentName}']/following-sibling::td/a[@class='delete-assignment']
+header_delete: xpath: .//*[@id='deleteAssignment-mdl-title']
+btn_delete_popup: xpath: .//*[@id='deleteAssignment-mdl']//button[contains(text(),'${buttonName}')]
+
+#Student
+OLDlst_assignmentNames: xpath: //tr//td[@class='name']//*[contains(@class,'assignment-name')]
+lst_assignmentNames: xpath: //tr//td[@class='name tleft']//a
+inst_assignmentName: xpath: .//*[@class='assignments']/table//a[text()='${assignName}']
+lnk_ml_assignmentName: xpath: .//th[@title='${assignName}']/a
+lnk_qc_assignmentName: xpath: .//th[@title='${assignName}']/a
+examName_link: xpath: //table[@id='assignmentsExams-table']//a[text()='${assignName}']
+btn_startQuiz: xpath: //span[text()='Start Quiz']
+btn_done1: xpath: //a[text()='DONE']
+txt_pointHighlight: css: .points.highlight
+txt_complete: css: .label.label-success
+txt_messageBeforeDueDate: xpath: (//div[@class='details'])[1]
+assignName_list:xpath:.//table[contains(@class,'assignments-table')]/tbody/tr[${index}]/td[@class='name']/a
+assignmentNames_Manage:xpath://tr/td[@class='name tleft']/a
+assignmentAvaildate:xpath:.//table[@id='assignmentsQuizzes-table']/tbody/tr[${index}]/td[@class='hidden-xs hidden-sm date']
+assignmentDuedate:xpath:(//table[@id='assignmentsQuizzes-table']/tbody/tr[${index}]/td[@class='hidden-xs date'])[1]
+assignmentNames:xpath:.//table[@class='table table-striped tablesorter assignmentResults-table']/tbody/tr/td[@class='name tleft']/a
+assignName_manage_list:xpath:.//table[@class='table tablesorter assignments-table']/tbody/tr[${index}]/td[@class='name tleft']/a
+assignmentAvaildate_manage:xpath:(//table[@class='table tablesorter assignments-table']/tbody/tr[${index}]/td[@class='hidden-xs date'])[1]
+assignmentDuedate_manage:xpath:(//table[@class='table tablesorter assignments-table']/tbody/tr[${index}]/td[@class='hidden-xs date'])[2]
+qc_assignmentName:css:.name>h2
+numOfQuestion:xpath:.//span[@class='chapter']
+qc_points:xpath:.//div[@class='ml points']
+assignment_name: xpath: .//div[@class='name']/h2
+timed_message:xpath:.//div[@class='details']
+assignment_duedate:xpath:.//div[@class='details']/span/strong
+table_ColumnheaderStatus:xpath://th[contains(text(),'Status')]
+table_ColumnheaderNoOfQuestion:xpath://th[contains(text(),'No. Questions')]
+table_DueDateSorted:css:.hidden-xs.header.sort_timestampDueDate
+availdate:xpath:.//*[@id='assignmentsQuizzes-table']//a[text()='${assignmentName}']/../..//td[@class='hidden-xs hidden-sm date']
+duedate:xpath:.//*[@id='assignmentsQuizzes-table']//a[text()='${assignmentName}']/../..//td[@class='hidden-xs date']
+btn_finishQuiz:xpath://button[text()='Finish Quiz']
+message_pastDue:xpath:(//div[@class='details'])[1]
+autosubmit_status:xpath:.//span[contains(text(),'Auto-submitted')]
+partialpoint:xpath://a[text()='${assignName}']/../../td[@class='hidden-xs']
+quiz_results:xpath:.//a[text()='Quiz Results']
+start_quiz: xpath: .//span[text()='Start Quiz']
+results_heading:css:.container.cf>h1
+pointValue:css:.points.highlight
+assignment_type:xpath://*[text()='${assignName}']/../../td[@class='status hidden-xs']
+txt_quizzes:css:.assignments>h2
+btn_StartExam: xpath: .//*[@class='btn btn-blue']
+assignmentWithState:xpath:.//a[text()='${assignName}']/../../td[@class='status']/span[contains(@class, 'success')]
+click_latest_assignment: xpath: (//tr[@data-pos-quiz="0"]//th/a)[1]
+start_quiz: xpath: //*[@id="assignment_quiz_start"]/button/span[1]
+submit_answer: css: #save-results
+

@@ -1,0 +1,21 @@
+# Sakurai  Practice Exam Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+iframe: xpath: //*[@id='prepu-frame']
+lnk_practiceExamActive: css: .menu-exam.active
+btn_startExam: xpath: .//*[@id='exam_start']/button
+txt_examResPageHeader: xpath: //h2[text()='Practice Exam Results']
+stats_exam: xpath: .//*[@class='result-overview clearfix']
+icon_remediation:xpath://*[@class='item-action']/span[@class='icon-remediation icon-smartsenseIcon${value}']/parent::*
+WK_Logo: xpath: .//div[@class='h-rightCol']
+Content_iFrame: xpath: .//*[@id='procedureContent']
+Content_Heading: xpath: //*[@class='h-grayBar']/div[contains(.,'${value}')]
+Content_BookTitle:xpath:.//*[@class='section'][1]
+
+
+radio_practice_exams: xpath: .//span[contains(text(),'${Option}')]/../input
+dropdown_numofques: xpath: .//div[@class='questions-desc']//select
+dropdown_timelimit: xpath: .//select[@id='minutes_limit']
+txt_no_question: xpath: .//div[@class='questions-desc']//p[@class='progress-alert-on-msg']
+txt_time_limit: xpath: (//p[@class='progress-alert-on-msg'])[2]
+radio_time_Limit: xpath: .//*[@id='noTimeLimitRadio']

@@ -1,0 +1,200 @@
+# Sakurai  Question Collection
+# elementname: locatortype: locatorvalue
+Title: Prep U
+iframe: xpath: .//*[@id='prepu-frame']
+link_createqc: xpath: .//a[@class='gray create-ql']
+mdl_checkbox: xpath: //*[@id='chapter-mdl']//label[contains(text(),'${chapter}')]/..//input
+error_rename: xpath: .//form[@id='edit-qc']/label[@class='error']
+createQc_popup: xpath: .//*[@id='createql-mdl']
+error_label: xpath: .//*[@id='createql-mdl']//label
+inp_qcName: xpath: .//div[@id='createql-mdl']//input[@id='name_qc']
+btn_create: xpath: .//div[@id='createql-mdl']//button[contains(@class,'create-qc-button')]
+link_qcfolder: xpath: .//a[@title='${qcName}']
+h3_qcName: css: .name>h3
+btn_manage: xpath: .//div[@class='menu-manage dropdown']//button[@id='dropdownMenu1']
+option_manage: xpath: .//button[@id='dropdownMenu1']/../ul//a[text()='${option}']
+inp_rename: xpath: .//input[@id='qc_name']
+qTextToDelete: xpath: //*[@id='qc-result-body']//div[@class='text']//p
+remove_link: xpath: (.//div[@class='link-box']/a)[1]
+list_qtext: xpath: //*[@id='qc-result-body']//div[@class='text']
+hide_chapters:xpath: .//div[@class='header']//a[contains(@class,'hide-from-quiz')]
+hide_chapter_heading:css: #chapter-filters>h1
+hide_chapter_chkbox:xpath: //span[contains(text(),'${chaptername}')]//../input
+hidden_chapter: xpath: //li[@class='filter-result-child']//a
+hidden_chapter1:	xpath:	(//li[@class='filter-result-child']//a)[${i}]/parent::div
+ql_expandarrow: xpath: //*[@id="filter-chapter-data-type-filter-list-menu-0"]/div[2]
+lnk_createQuestion:xpath: .//div[@class='left-menu']//a[contains(@href,'createQuestion')]
+header_createQuestion:xpath: //h2[contains(text(),'Create Question')]
+frame_txtquestion: xpath: (.//iframe[@class='cke_wysiwyg_frame cke_reset'])[${Index}]
+txt_question:xpath: //body[contains(@class,'cke_editable')]
+txt_answerChoice:xpath:.//*[@class='answer-choice']//textarea[@name='answer-text']
+dropdown_LO:xpath:.//*[@id='select2-chosen-1']
+btn_saveQuestion:xpath:.//*[@id='btn-save']/button
+option_correct: xpath: (.//*[@class='answer-choice']//input[@type='radio'])[1]
+select_category: xpath: .//span[@title='${category}']
+select_chapter: xpath: .//li[contains(text(),'${chapter}')]
+item_selected: xpath: .//span[@class='selected-item-text']
+text_question: xpath: .//div[@class='text']
+link_edit: xpath: .//a[@class='remove-btn edit']
+bttn_addMultiple: xpath: .//div[@id='add-multiple-to-collection']//button
+icon_exist: xpath: .//div[contains(text(),'${iconName}')]/parent::div/span[@aria-label='Exists in another Collection']
+Bloom_Taxonomy: xpath: //h2[text()="Client Needs"]
+
+lnk_Q.Library: xpath: //li[@class='menu-questionLibrary active']/a
+lnk_createQuestionCollection: xpath: //a[@class='gray create-ql']	
+txt_answerChoice:xpath:.//div[${value}][@class='answer-choice']/span/input[@name='answer-text']
+dropdown_LO_Pediatric:xpath:.//*[@id='select2-chosen-3']
+search_LO:xpath:.//*[@id='s2id_autogen3_search']
+#dd_LO_BasicPhyCare:xpath:.//*[@id='select2-chosen-1']//parent::a//parent::div//parent::div[@class='clearfix lo-select-group']/select/option[text()='Basic Physical Care']
+dd_LO_BasicPhyCare:xpath:.//*[@class='select2-result-label' and text()='Basic Physical Care']
+dd_LO_Infant:xpath:.//*[@id='select2-result-label-49']
+#dd_LO_PsychosocialNeeds:xpath:.//*[@id='select2-chosen-1']//parent::a//parent::div//parent::div[@class='clearfix lo-select-group']/select/option[text()='Basic Psychosocial Needs']
+LO_selected:xpath://*[@class='selected-item'][contains(.,'${value}')]
+createQues_Success:xpath://*[@id='success-modal']//div[@class='modal-content']
+createdQues_Saved:xpath://*[@class='success-body']/span[@class='title']
+createdQues_Msg:xpath:.//*[@class='success-body']/span[@class='text' and text()='The question has been added to your question library.']
+btn_returnToQuestionLibrary:xpath:.//button[@id='btn-return-qc']
+modal_createQc: xpath: //div[@id='createql-mdl']//div[@class='modal-content']
+txt_createQc: xpath: //div[@id='createql-mdl']//h4[@class='modal-title']
+btn_x:xpath://div[@id='createql-mdl']//button[contains(text(),'x')]
+btn_cancel: xpath: //div[@id='createql-mdl']//a[@class='cancel']
+inp_questionCollectionName: id: name_qc
+txt_errorQuestionCollectionName: xpath: //label[@id='name_qc-error']
+btn_create: css: .btn.btn-blue.create-qc-button
+lst_questionCollectionName: xpath: //li[@class='subtitle']/following-sibling::li/a
+btn_searchLibrary: xpath: //a[contains(text(),'Search Library')]
+txt_chapterSelected:xpath://a[contains(.,'${chapterName}')]
+chapter_expand: xpath: //h3[@id="filter-chapter-data-type-filter-list-menu-5"]/div[2]
+chapter_expand1: xpath: //h3[@id="filter-chapter-data-type-filter-list-menu-0"]/div[2]
+chapter_expand2: xpath: //h3[@id="filter-chapter-data-type-filter-list-menu-1"]/div[2]
+btn_addToCollection: xpath: //div[@class='question-container']//button[@id='dropdownMenu1']
+txt_questionCollectionName: xpath: (//div[@class='qc-wrapper-links']//ul)[${value}]//a[@class='options add-to-question-set']
+lbl_confirmMessageInGreen:css:.toast.toast-success
+modal_prop: xpath: //*[@id='createql-mdl']
+ChaptersInContent:xpath://ol//div[contains(@id,'ember')]
+ChaptersInContent:xpath://ol[@class='chapter-list chapter-results-list']//div[contains(@id,'ember')]
+questionLibPageHeader:xpath:.//div[@class='header']/h2
+categoryBoxElement:id:chapter-mdl
+quesLibDiv:xpath://div[(@class='container question-library')]
+TopicsInContent:xpath://ol /li/strong
+topics:xpath://ol//li[${value}]/strong
+chaptersInATopic:xpath://ol/li[${value}]//li
+TopicsInContent:xpath:.//ol[@class='chapter-list chapter-results-list']//strong
+topics:xpath://ol[@class='chapter-list chapter-results-list']//li[${value}]/strong
+chaptersInATopic:xpath://ol[@class='chapter-list chapter-results-list']/li[${value}]//li
+chapterLinksWithinTopic:xpath:(//ol[@class='chapter-list chapter-results-list']/li[%]//a)[$]
+searchLibLink:xpath://a[contains(text(),'Search')]
+chapter1Link:xpath://a[text()='1: Atomic Theory and Atomic Structure']
+chNameSpanElement:xpath://div[@class='comma-split']/span
+searchBox:xpath:.//*[@id='filter-term-input']
+bttn_search: xpath: .//button[contains(text(),'Search')]
+leftNavigationMenuBox:xpath://div[@class='menu']
+quesText:xpath:(//div[contains(@class,'container question-library')]//div[@class='text'])[${value}]/p
+totalQuestionTexts:xpath://div[@class='text']
+answerbox:xpath:(//ul[@class='answer-choices'])[${value}]
+answerChoices:xpath:(//ul[@class='answer-choices'])[${value}]/li
+answerTextForAnOptionOfAQues: xpath: ((//ul[@class='answer-choices'])[%]//div[@class='answer text'])[$]
+optionPercentageForAQues:xpath:(//ul[@class='answer-choices'])[%]/li[$]//span[@class='percentage']
+difficultyValuesForQues: xpath: (//div[@class='container question-library']//div[contains(@class,'base')])[${value}]/span
+difficulty_txt:xpath:(//div[@class='container question-library']//div/span[@class='legend'])
+thermometer_color:xpath:(//div[@class='container question-library']//div[@class='image'])
+answerPath:xpath:((//ul[@class='answer-choices'])[2]/li[${value}]/div)[1]
+answerPath1:xpath:((//ul[@class='answer-choices'])[1]/li[${value}]/div)[1]
+sortDropDown:xpath://div[@class='question-sort']//select
+quesNoText:xpath:(//div[@class='question-numbers'])[1]//h4
+refineSearchLink:linktext:Refine Search
+correctIncorrectsPath:xpath:(//ul[@class='answer-choices'])[%]/li[$]/div[@class='stats']/span[2]
+wrong:xpath:(//ul[@class='answer-choices'])[2]/li[2]/div[@class='stats']/span[contains(@class,'circle-wrong')]
+showMoreQuestionsLink:xpath://a[@id='paging']
+diff_thermo:xpath:(//div[@class='image'])[${value}]
+explanationLink:xpath:(//*[@class='panel-heading'])[${value}]//h4/a
+explanation:xpath:(//div[@class='feedback'])[${value}]/p
+metadata:xpath:(//div[contains(@class,'explanation-details')]/strong)[${value}]
+percentages:xpath:((//ul[@class='answer-choices'])[%]/li//span[@class='percentage'])[$]
+barGraph:xpath:((//ul[@class='answer-choices'])[%]/li//div[@class='progress']/div)[$]
+filterDropDown:xpath://*[@class='menu-filter dropdown']/button
+chapterLink:css:.filter.filter-chapter
+bloom_taxonomy:css:.filter.filter-blooms
+chaptersModalBox:xpath://div[@id='chapter-mdl']//div[@class='modal-content']
+chapterCheckbox:xpath://label[text()='${value}']/preceding-sibling::*
+applyButton: xpath: //div[@id='chapter-mdl']//button[contains(@class,'btn-blue')]
+closeButton: xpath: //div[@id='chapter-mdl']//button[@class='close']
+filterAfterText:xpath://div[@class='filter-title']
+Chapterfilter_title:xpath://div[@class='filters']/div[2]/*[@class='filter-breadcrumb-item filter-box chapters-filter']/*[@class='filter-title']
+CrossIcon_ChapterFilter:xpath://div[@class='filters']/div[2]/*[@class='filter-breadcrumb-item filter-box chapters-filter']/*[@class='filter-title']/a
+breadcrumbsFilter:xpath://div[@class='comma-split']
+chaptersSelectedAfterFilter:xpath://div[@class='comma-split']/span[${value}]
+crossIconInFilterText:xpath://div[@class='filter-title']/a
+chLink:xpath:(//ol[@class='chapter-list chapter-results-list']//li/div[contains(@class,'chapter-filter')])[${value}]/a
+hideFromPracticeQuizCheckBox:xpath:(//input[contains(@class,'question-checkbox')])[${value}]
+QCFolder_list_Under_QC_Quiz:xpath://select[@id='select-qc']/option
+leftMenu_QC_Folder_list:xpath:.//div[@class='left-menu']//a[@class='options qc-link']
+difficultySortDropDown: xpath: //div[@class='question-sort']//select
+quesTextInQuiz:xpath://div[contains(@class,'quiz-container')]/h2
+firstOption: xpath: (//input[@type='radio'])[1]
+submitButton: xpath: //button[@type='submit']
+firstOptionText: xpath: //ul[@class='question-container']/li[1]/label
+txt_questionCount: xpath: //div[@class='question-container']//div[@class='question-numbers']
+list_questionsInQC: xpath: //div[@class='container question-library']//div[@class='text']
+list_answerChoices: xpath: //div[@class='container question-library']//ul[@class='answer-choices']
+link_First_QC_Folder: xpath: (//a[text()='${name}'])[1]
+questionBoxes: xpath: //div[@class='container question-library']//div[contains(@class,'question-box')]
+questionBoxesBeforeShowMoreLink: xpath: //a[text()='Show more questions']/parent::*/preceding-sibling::*//div[contains(@class,'question-box')]
+qcFooter: xpath: //div[@class='qc-footer']
+numOfQuestionInChapter:xpath:.//div[@class='question-numbers']/h4
+chapter_modal:xpath://*[@id='chapter-mdl']
+taxonomy_modal_cancel:xpath:.//*[@id='taxonomy-mdl']//a[contains(text(),'Cancel')]
+taxonomy_modal_x:xpath:.//*[@id='taxonomy-mdl']//button[@class='close']
+metadata_options:xpath:.//*[@id='taxonomy-mdl']//label
+apply_bttn_taxonomy:css:#taxonomy-mdl .btn.btn-blue
+bloomtaxonomyText_list:css:.clearfix .container .term-taxonomies div:nth-child(1) ul li:nth-child(3)
+chapters_list:xpath:.//div[@class='chapter-filters']//ol//a
+search_box:css:.search-criteria
+
+
+
+save_bttn:xpath:.//div[@class='actions']//button
+thermometer_color:xpath:.//div[@class='container question-library']//div[@class='thermomether']
+question_txt:xpath:(//div[contains(@class,'container question-library')]//div[@class='text'])
+fib_answer_choices:xpath:(//ul[@class='answer-choices'])[1]/li
+correct_answer_choices:xpath:(//ul[@class='answer-choices'])[${value}]//div[@class='stats']/span[contains(@class,'circle-ok')]
+percentage_with_answers:xpath:(//ul[@class='answer-choices'])[${value}]//div[@class='stats']/span[@class='percentage']
+lnk_all_other_answer:xpath:(//a[contains(text(),'All other answers')])[1]
+all_ans_popup:xpath:.//div[@class='modal-content question-information']
+top_25_ans:xpath:.//div[@class='modal-content question-information']//ul/li
+bttn_close:xpath:.//div[@class='modal-content question-information']//button[contains(text(),'Close')]
+pop_up_window:css:#text-entry-modal
+scroll:xpath:.//ul[@class='answer-choices']//li[25]
+lst_questionChoices: css: .qc-wrapper.question-box:nth-of-type($) .question-choices>li
+ans_img_add_to_qc_dropdown:xpath:(//ul[@class='answer-choices']/li[1]/div[@class='answer media'])/ancestor::div[@class='question-partial qc-wrapper question-box']//button[@id='dropdownMenu1']
+ans_img_qc_list:xpath:(//ul[@class='answer-choices']/li[1]/div[@class='answer media'])[${index}]/ancestor::div[@class='question-partial qc-wrapper question-box']//button[@id='dropdownMenu1']/following-sibling::ul//a
+ques_img_add_to_qc_dropdown:xpath:.//div[@class='qc-wrapper-title']//img/../../../../..//div//button[@id='dropdownMenu1']
+ques_img_qc_list:xpath:(//div[contains(@class,'container question-library')]//div[2]/img)[${index}]/ancestor::div[@class='question-partial qc-wrapper question-box']//button[@id='dropdownMenu1']/following-sibling::ul//a
+answer_choices_txt:xpath:(//ul[@class='answer-choices'])[${index}]/li/div[@class='answer text' and contains (.,'Stanislao Cannizzaro')]
+bttn_x_searchbox: xpath:.//*[@class='search-criteria']/a
+btn_CrossOutSearch:xapth://a[@class='gray glyphicon glyphicon-remove']
+misconception:xpath:(//div[@class='misconception hidden-xs'])[1]
+QuestionContainer: xpath: .//*[@class='question-container']
+dd_chapters: css: .filter.filter-chapter
+dd_classData: css: .filter.filter-class-data
+radioBtn_Class:xpath://*[@class='class-data']/ul/li[contains(.,'${className}')]/input
+btn_ModalApply:xpath://*[@class='modal-footer']/button
+chk_Chapter01: xpath: .//div[@class='units-chapter'][1]/ul/li[1]/input
+Filter_Title:xpath://*[@class='filter-title']
+title_SearchLibrary:xpath://ul[@class='question-sets']/li[2]/a
+lnk_KeywordSearch:xpath://*[@class='options filter filter-term']
+lnk_ChapterFilter:xpath://*[@class='options filter search-library filter-chapter']
+mdl_NTopicsFilter:xpath://*[@id='chapter-mdl']//*[@class='modal-content']
+lnk_ClientNeedsFilter:xpath://*[@class='options filter filter-client_needs']
+lnk_NursingConpceptsFilter:xpath://*[@class='options filter filter-nursing_concepts']
+lnk_BloomsFilter:xpath://*[@class='options filter filter-blooms']
+lnk_QTypeFilter:xpath://*[@class='options filter question-type']
+lnk_ClassDataFilter:xpath:.//*[@class='options filter filter-class-data']
+nursingTopic_Choice:xpath://*[@class='units-chapter']/ul/li/*[text()='${topicName}']/preceding-sibling::input
+filterOptions:xpath://a[starts-with(@class,'options filter')]
+bttn_search:xpath:.//button[text()='Search']
+txt_top_qc:xpath:.//div[@class='left-menu']//ul[2]/li[1]/a[@title='${qcname}']
+checkbox_allquestion:xpath:.//div[@class='question-container']//input[@title='Select all questions']
+question_chkbox: xpath: .//input[@title='Select question']
+link_selectedquestions: xpath: .//div[contains(@class,'selected-questions-link')]/a
+span_selectedQuestions: xpath: .//span[contains(text(),'Selected Questions')]

@@ -1,0 +1,96 @@
+# Sakurai  Assign your quiz Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+#Step3
+iframe: xpath: .//*[@id='prepu-frame']
+header_setupAssignment: xpath: .//div[contains(@class,'step3')]//h2
+header_ml_setupAssignment: xpath: .//div[contains(@class,'step2 stepsContent full-width-important')]//h2
+anskey_never: xpath: (//input[@value='never'])[2]
+immediate_anskey: xpath: .//*[@id='assign-a-quiz-step3']//ul//input[@value='completed']
+header_AssignYourQuiz: xpath: (.//h2[@class='title'])[2]
+selected_chapters_div: xpath: (.//div[@class='sub-category' and contains(text(),'${chapter}')])[2]
+assignmentClass_section: xpath: .//div[@class='class-assignments-header-label']
+inp_assignmentName: xpath: .//input[contains(@class,'assignment-name') and contains(@title,'${chapter}')]
+txt_className: xpath: //h1[text()='${className}']
+txt_editQuiz: xpath: //h2[contains(text(),'Edit Quiz')]
+txt_AssignYourQuiz: xpath: //h2[contains(.,'Assign your quiz')]
+txt_assignmentName: xpath: //h2[contains(.,'${assignment text}')]
+monthNameInCal: xpath: //div[@class='datepicker-days']//th[@class='datepicker-switch']
+firstDayField: xpath: (//td[@class='day'])[1]
+txt_chapter: classname: chapter
+txt_targetLevel: css: .targets>span
+txt_masteryLevelScore: classname: ml
+chk_selectClass: xpath: //ul[@class='activeClasses']//li//span[contains(text(),'${className}')]/../preceding-sibling::*/input
+chk_selectClass1: xpath: //ul[@class='activeClasses']//li[text()='${classname}']//input
+chk_classes: xpath: (//ul[@class='activeClasses'])[1]/li//input
+lbl_classes: xpath: (//ul[@class='activeClasses'])[1]/li//label
+inp_points: id: points
+chk_ungraded: id: ungraded
+inp_startDate:xpath://input[@id='startDate']
+txt_date: xpath: //div[@class='datepicker-days']//td[@class='day' and text()='${date}']
+lnk_startHour: css: #select2-startHour-container
+sel_startHour: id: startHour
+txt_startDatError: id: startDate-error
+list_startHourOptions: xpath: li[contains(@class,'select2-result-selectable')]
+lnk_startHourOptions: xpath: //li[contains(@class,'select2-result-selectable')]//div[contains(.,'${ink_text}')]
+inp_startHour: xpath: //div[@id='s2id_startHour']/input
+btn_timeZone: xpath: .//button[@id='dropdownMenu1']
+txt_timeZoneList: xpath: (//ul[@class='dropdown-menu'])[4]/li
+sel_timeZone: xpath: (//ul[@class='dropdown-menu'])[4]//a[text()='${ink_text}']
+btn_dueHour: css: #select2-dueHour-container
+sel_dueHour: id: dueHour
+txt_timezone: classname: label-timezone
+inp_dueDate:xpath://input[@id='dueDate']
+txt_errorMss: classname: error-classes
+btn_assignExam: xpath: //*[@class='btn btn-blue assign-exam-btn']
+btn_continue3: xpath: .//*[@class='btn btn-blue assign-button']
+btn_save:xpath:.//button[@class='btn btn-blue']
+btn_goBack_2: css: #assign-a-quiz-step3 .go-back
+err_alreadyStarted: xpath: //label[@class='error' and contains(text(),'already started')]
+btn_prevMnth:xpath://div[@class='datepicker-days' and contains(@style,'block')]//th[@class='prev']
+btn_nextMnth:xpath://div[@class='datepicker-days' and contains(@style,'block')]//th[@class='next']
+assignAQuizLink:xpath://li[@class='menu-assignQuiz']//a[contains(text(),' a Quiz')]
+text_chooseType:xpath://div[contains(@class,'step1')]/h2
+txt_questionCount: xpath: //span[@class='chapter']
+txt_questionWorth: xpath: //label[@class='labels each-question-label']
+txt_pointsError: xpath: //label[@id='points-error']
+bttn_time_zone_dropdown:xpath:.//button[@id='dropdownMenu1']
+time_zone:xpath:.//a[starts-with(.,'${timeZone}')]
+time_zone_duedate:xpath:.//span[@class='label-timezone']
+mentNames:xpath:.//table[@class='table tablesorter mentResults-table']/tbody/tr/td[@class='name']/a
+Name_list:xpath:.//table[@class='table tablesorter mentResults-table']/tbody/tr[${index}]/td[@class='name']/a
+mentAvaildate:xpath:(//table[@class='table tablesorter mentResults-table']/tbody/tr[${index}]/td[@class='hidden-xs']/span)[1]
+mentDuedate:xpath:(//table[@class='table tablesorter assignmentResults-table']/tbody/tr[${index}]/td[@class='hidden-xs']/span)[2]
+time_radio_bttn:xpath: .//*[contains(@id,'completeInMinutesRadio')]
+btn_timeNoLimitRadio: xpath: .//*[contains(@id,'noTimeLimitRadio')]
+inputbox_time:xpath:.//input[@name='completeInMinutes']
+notimelimit_radio:id:noTimeLimitRadio
+timed_error_message:css:#completeInMinutes-error
+answerkey_label:xpath:.//input[@name='answerKey']/..
+answerKeyfirstOption: xpath: //label//input[@value='overdue']
+answerKeysecondOption:xpath:(//input[@name='answerKey'])[2]
+answerKeythirdOption:xpath:(//input[@name='answerKey'])[3]
+whatisthis_lnk:xpath:.//*[@id='assign-a-quiz-step3']//h4/a[contains(text(),'What')]
+whatisthiswindowandmessage:css:#what-is-answerKey .modal-body.cf
+whatisthispopupclose:css:#what-is-answerKey .close
+actualTimeZone_list:xpath:.//div[@class='dropdown']/ul/li/a
+availhour:css:#s2id_startHour #select2-chosen-1
+autosubmit_checkbox:xpath://input[@id='autoSubmit']
+autoSubmit:xpath://input[@id='autoSubmit']/..
+lnk_whatThis:xpath://input[@id='autoSubmit']/../..//a[text()="What's this?"]
+header_whatThisPopup:css:#what-is-autosubmit .modal-title
+body_whatThisPopup:css:#what-is-autosubmit .modal-body
+close_whatThisPopup:xpath://*[@id='what-is-autosubmit']/*/*/*[@class='modal-header']/button
+assignmentNames:xpath:.//table[contains(@class,'assignmentResults-table')]/tbody/tr/td[@class='name tleft']/a
+assignName_list:xpath:.//table[contains(@class,'assignmentResults-table')]/tbody/tr[${index}]/td[@class='name']/a
+assignmentAvaildate:xpath:.//table[contains(@class,'assignmentResults-table')]//td[@title='${assignmentName}']/..//td[@class='hidden-xs date'][1]
+assignmentDuedate:xpath:.//table[contains(@class,'assignmentResults-table')]//td[@title='${assignmentName}']/..//td[@class='hidden-xs date'][2]
+text_chooseAssignType:xpath:.//*[@class="step1 stepsContent"]//h2
+availabledate_calender: xpath: //*[@class='datepicker-days']
+btn_AssignQuiz: xpath: .//button[@class='btn btn-blue assign-button']
+text_chooseAssignType:xpath://h2[contains(text(),'Choose an assignment type')]
+text_chooseAssignType:xpath:.//*[@class="step1 stepsContent"]//h2
+chkbox_bookmark: xpath: .//label[@for='allowBookmarks']//input[@id='allowBookmarks']
+chkbox_review: xpath: .//label[@for='reviewAnswers']//input[@name='reviewAnswers']
+assignmentHeading:	xpath:	//div[@class="name" and starts-with(text(),'Mastery')]

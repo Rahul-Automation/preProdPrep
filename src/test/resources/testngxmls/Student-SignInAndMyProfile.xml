@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="PrepUSakurai_Test_suite" preserve-order="true" >
+<test name="Student_Sign_In_Out_My_Profile" preserve-order="true">
+<classes>
+<class name="com.qait.sakurai.automation.tests.StudentFlows.SignInAndMyProfile.LoginPage_Test"></class>
+<class name="com.qait.sakurai.automation.tests.StudentFlows.SignInAndMyProfile.RetrieveData_Test"></class>
+<class name="com.qait.sakurai.automation.tests.StudentFlows.SignInAndMyProfile.StudEditProfile_Test"></class>
+</classes>
+</test>
+</suite>

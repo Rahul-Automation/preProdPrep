@@ -1,0 +1,24 @@
+# Sakurai Login Home Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+lnk_selectSubject: xpath: //a[text()[contains(., '${Subject Text}')]]
+lnk_selectYourSubject: css: .accordion-one
+
+inp_username: id: email
+inp_password: id: password
+btn_submit: xpath: //button[@type='submit']
+
+txt_usernameError: id: email-error 
+txt_passwordError: id: password-error
+txt_invalidUserError: xpath: //div[@class='error']
+
+# thePoint1 Login Home Page
+btn_NewUser: xpath: //a[contains(.,'New User')]
+btn_ReturnUser: xpath: .//*[@id='main-header']//a[contains(text(),'Return User')]
+Login_iFrame: xpath: //*[@id='cboxLoadedContent']/iframe
+LoginWindowHeader: xpath: .//h1[@id='dialog-heading']
+inp_Email: css: #Email
+inp_Pass: css: #Password
+btn_Login: xpath: .//div[@class='buttonDiv']/ol/li[2]/a
+msg_Loading: xpath: //div[@class='blockUI blockMsg blockPage']/h1
+UserInformation: css: #userinformation

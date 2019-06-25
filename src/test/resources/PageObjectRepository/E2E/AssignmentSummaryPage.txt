@@ -1,0 +1,17 @@
+# Sakurai  Assignment Summary Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+lnk_assignmentSummary: xpath: .//div[@class='name']/h2[text()='${assignmentName}']
+lnk_assignmentName: xpath: .//div[@class='name']/h2[text()='${assignmentName}']
+lbl_chapter: xpath: //span[@class='chapter']
+lbl_assignedClass: xpath: //div/span[@class='highlight']
+txt_deadlines: xpath: .//div[@class='highlight']
+txt_noOfStudents: xpath: //h3
+txt_classAverage: xpath: //div[@class='ml']/div
+txt_targetMastery: xpath: //div[@class='targets right']/div[@class='ml']
+average_score:css:.details.average-score>h3
+class_name:css:.assignment-class.highlight
+num_of_question:css:.chapter.question-number
+num_of_student_completed:css:.details.number-completed>h3
+txt_assign_name:css:.qc-name>h2

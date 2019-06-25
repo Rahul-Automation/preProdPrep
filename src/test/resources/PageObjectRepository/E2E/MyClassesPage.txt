@@ -1,0 +1,41 @@
+# Sakurai My Classes Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+#E2E Student
+iframe: xpath: .//*[@id='prepu-frame']
+inst_myclass: xpath: .//h1[text()='My Classes']
+lnk_addClass: xpath: .//a[text()='Add a Class']
+lnk_addNewClass: xpath: .//a[contains(text(),'+ Add a New Class')]
+lnk_enrolledClass1: xpath: .//table[@class='table active-classes']//td[@title='${className}']/a
+stu_header: css: #class-container-section-header
+classlink_stu: xpath: .//div[@class='classes-list clearfix']//a[text()='${className}']
+
+#Student
+stud_myclass: xpath: //h2[contains(text(),"My Classes")]
+lnk_selfStudy: xpath: //a[contains(text(),"Self study")]
+lbl_selfStudy: xpath: //label[contains(text(),'Self study')]
+lnk_joinAClass: xpath: (.//a[text()='Join a Class'])[1]
+lnk_enrolledClasses:xpath://h3//a
+lnk_activeClass:xpath:.//table[@class='table active-classes']//a[text()='${className}']
+lnk_ClassName: xpath: (//td[@class='name-column']/a)[1]
+txt_productName: xpath: (//td[@class='product-column'])[1]
+lnk_firstClass: xpath: (//h3//a)[1]
+lnk_AddAClass: xpath: //a[text()='Add a Class']
+lnk_joinClsAsCoInst: xpath: //a[text()='Join class as co-instructor']
+txt_noInActCls: xpath: //div[contains(.,'You have no inactive classes')]/h2[contains(.,'Inactive')]
+txt_nameClm: xpath: //h2[contains(.,'Active')]/..//th[text()='Name']
+txt_termClm: xpath: //h2[contains(.,'Active')]/..//th[text()='Term']
+txt_productClm: xpath: //h2[contains(.,'Active')]/..//th[text()='Product']
+txt_ClsCodeClm: xpath: //h2[contains(.,'Active')]/..//th[text()='Class Code']
+lnk_edit: xpath: (//h2[contains(.,'Active')]/..//a[text()='Edit'])[1]
+td_classnameList: xpath: //table[@class='table active-classes']//tr/td[@class='name-column']
+td_termList: xpath: //table[@class='table active-classes']//tr/td[@class='term-column']
+td_productList: xpath: //table[@class='table active-classes']//tr/td[@class='product-column']
+
+#Instructor
+heading_txt: xpath: .//h1[text()='${ink_text}']
+txt_className:xpath://td[@class='name-column']//a[text()='${className}']
+lnk_className1:xpath://tr/td[@class='name-column']/a[text()='${className}']
+link_edit:xpath://a[text()='${className}']/../following-sibling::td[4]/a
+list_inactiveClass:xpath:.//table[@class='table inactive-classes']/tbody/tr/td[@class='name-column']/a
+lnk_joinclassascoinstructor:xpath:.//a[text()='Join class as co-instructor']

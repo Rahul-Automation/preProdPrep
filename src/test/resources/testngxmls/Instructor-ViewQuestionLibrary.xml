@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="PrepUSakurai_Test_suite" preserve-order="true" >
+
+<test name="Instructor_View_Question_Library" preserve-order="true">
+<classes>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewQuestionCollection.QuesLibraryContentVerifyAndSearchFeatures_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewQuestionCollection.QuesLibraryFilteringSortingPagingFunctionality_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewQuestionCollection.QuestionLibraryAddFilterByMetaData_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewQuestionCollection.HideChaptersFromPracticeQuiz_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewQuestionCollection.CreateNonMcqQuestionCollection_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewQuestionCollection.InstructorViewFIBQuestions_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewQuestionCollection.InstructorViewImageTypeQuestion_Test"></class>
+<class name="com.qait.sakurai.automation.tests.InstructorFlows.ViewQuestionCollection.InstructorViewMultipleChoiceQuestion_Test"></class>
+</classes>
+</test>
+</suite>

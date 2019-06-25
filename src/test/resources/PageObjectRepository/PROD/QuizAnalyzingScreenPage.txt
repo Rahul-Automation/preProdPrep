@@ -1,0 +1,18 @@
+# Sakurai  Quiz Analysing Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+iframe: xpath: //*[@id='prepu-frame']
+txt_analyzingResults: xpath: //h1[@class='section-header dark']
+txt_header1: xpath: //h3[text()='Grading Quiz']
+txt_header2: xpath: //h3[text()='Comparing performance']
+txt_header3: xpath: //h3[text()='Calculating mastery level']
+
+div_spinFirstCircleIncomplete: xpath: //div[@class='div1 align-center']//div[@class='circle incomplete']
+div_spinFirstCircleReady: xpath: //div[@class='div1 align-center']//div[@class='circle ready']
+div_spinSecondCircleReady: xpath: //div[@class='div2 align-center']//div[@class='circle ready']
+div_spinThirdCircleReady: xpath: //div[@class='div3 align-center']//div[@class='circle ready']
+txt_calculatingMaster: xpath: //h3[contains(text()='Calculating mastery level')]
+img_spinner1complete: xpath : //div[@class='circle incomplete']following-sibling::h3
+lnk_exitQuiz:xpath://a[text()='Exit quiz']
+lbl_quizTimer:xpath://span[@class='time']

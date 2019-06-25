@@ -1,0 +1,41 @@
+# Sakurai  Question Collection
+# elementname: locatortype: locatorvalue
+Title: Prep U
+iframe: xpath: .//*[@id='prepu-frame']
+btn_addToCollection_list: xpath: //div[@class='question-container']//button[@id='dropdownMenu1']
+addToCollection_btn: xpath: (//div[@class='question-container']//button[@id='dropdownMenu1'])[1]
+txt_questionCollectionName: xpath: (//div[@class='question-container']//button[@id='dropdownMenu1' and @aria-expanded='true']/following-sibling::ul/li[@class='qc-option'])[1]/a
+lbl_confirmMessageInRed:css:.toast.toast-error
+lbl_confirmMessageInGreen:css:.toast.toast-success
+leftMenu_QC_Folder_list:xpath:.//div[@class='left-menu']//a[@class='options qc-link']
+NumOfQuestion:xpath: (//a[@class='options']/../span)[1]
+link_First_QC_Folder:xpath:(//a[text()='${name}'])[1]
+Num_Of_Question_In_QC:xpath:(//div[@class='question-numbers'])[1]//h4
+QC_Folder_Name:xpath:.//div[@class='name name-result']/h3
+Question_Library_Tab:xpath:(//a[contains(text(),'Question Library')])[3]
+bttn_addToCollection:xpath : (//div[@class='question-container']//button[@id='dropdownMenu1'])[1]
+new_Question_Collection: xpath : (//a[@class='add-to-new-qc'])[1]
+bttn_manage_dropdown:xpath:.//div[@class='menu-manage dropdown']/button[@id='dropdownMenu1']
+copy_under_manage_dropdown:xpath:.//a[contains(text(),'Copy')]
+inputbox_QC_Name:xpath:.//*[@id='name_qc']
+list_order_Dropdown_Under_Question:xpath:.//div[@class='container question-library']//div[@class='order-box']/select
+list_question_under_QC:xpath:.//div[@class='container question-library']//div[@class='text']
+rename_under_manage_dropdown:xpath:.//a[contains(text(),'Rename')]
+name_textbox:css:#qc_name
+pencil_icon:xpath:.//*[@class='name']//a
+print_under_manage_dropdown:xpath:.//a[contains(text(),'Print')]
+print_modal_window:xpath:.//div[@class='modal-body cf question-container']
+title_Answer_Key:xpath:.//div[@class='answer-key']/div[@class='title']
+list_numbers:css:.answer-key .number
+list_answers:css:.answer-key .answers
+bttn_print:xpath:.//div[@class='modal-footer']/a[contains(text(),'Print')]
+bttn_cancel:xpath:.//div[@class='modal-footer']/button[contains(text(),'Cancel')]
+delete_under_manage_dropdown:xpath:.//a[contains(text(),'Delete')]
+delete_popup_window:xpath:.//div[@class='modal-content']
+delete_popup_window_label:xpath:.//h4[@id='myModalLabel']
+delete_popup_label2:xpath:.//div[@class='modal-dialog small-modal']/div[@class='modal-content']/div[@class='modal-body']
+bttn_delete: xpath: .//*[@data-text='questionLibrary.delete']/button
+btn_cancel:xpath:(//div[@class='modal-content']//a[@class='cancel'])[2]
+lbl_deleteMessage:xpath://div[@class='toast-message']
+remove_question_from_qc:xpath:.//div[@class='question-container']//a[@class='remove-btn']
+numOfQuestionInQc:xpath:(//a[text()='${name}'])[1]/../span

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PrepUSakuraiSmoke_Test_suite" preserve-order="true"
+	parallel="tests" thread-count="1">
+
+	<parameter name="productName" value="Hinkle" />
+	  <test name="Create Class Test">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.Create_Class_Test"></class>
+		</classes>
+	</test>
+
+	<test name="Create New Question and Edit Question Test">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.CreateNewQuestionTest"></class>
+		</classes>
+	</test> 
+
+	<test name="QC Timed Assignment With Never Answer Key Option Test">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.QC_Timed_Assignment_With_Never_Answer_Key_Option_Test">
+			</class>
+		</classes>
+	</test>
+
+	<test name="QC Untimed Assignment With Due Date Option Test">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.QC_Untimed_Assignment_With_Due_Date_Option_Test"></class>
+		</classes>
+	</test>
+
+	  <test
+		name="Instructor Hide Chapters from Question Library 
+		and Practice Quiz Test">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.InstructorHideChaptersFromQuestionLibraryAndPracticeQuiz"></class>
+		</classes>
+	</test>
+
+	<test name="Question Library Test">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.Question_Library_Test"></class>
+		</classes>
+	</test>
+
+	 <test name="Student Attempt Practice Quiz In CoursePoint Test">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.StudentAttemptPracticeQuizInCoursePointTest"></class>
+		</classes>
+	</test>
+
+
+
+	<test
+		name="Instructor Should Not Be Able To Create QC 
+		folder With Same Name">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.Instructor_Should_Not_Be_Able_To_Create_QC"></class>
+		</classes>
+	</test> 
+
+	  <test name="Review_And_Bookmark_Functionality_In_QC_Assignment_Test_Timed">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.Review_And_Bookmark_Functionality_In_QC_Assignment_Test">
+				<methods>
+					<exclude
+						name="Test150_Verify_Student_Is_Navigated_To_Quiz_Results_Page_On_Clicking_Submit_Without_Review_Button_On_Review_Ans_Popup" />
+					<exclude
+						name="Test081_Verify_Instructor_Can_Set_Untimed_Assignment_And_Select_Immediate_Option_For_Answer_Key" />
+					<exclude name="Test121_Select_Assignment_On_Assignment_Information_Page" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Review_And_Bookmark_Functionality_In_QC_Assignment_Test_Untimed">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.Review_And_Bookmark_Functionality_In_QC_Assignment_Test">
+				<methods>
+					<exclude
+						name="Test150_Verify_Student_Is_Navigated_To_Quiz_Results_Page_On_Clicking_Submit_Without_Review_Button_On_Review_Ans_Popup" />
+					<exclude
+						name="Test080_Verify_Instructor_Can_Set_Timed_Assignment_And_Select_Immediate_Option_For_Answer_Key" />
+					<exclude
+						name="Test120_Select_Assignment_And_Verify_Time_Message_On_Assignment_Information_Page" />
+				</methods>
+			</class>
+		</classes>
+	</test> 
+
+	<test name="Create Mastery Level Assignment With Multiple Topics and Student Take It">
+		<classes>
+			<class
+				name="com.qait.sakurai.automation.tests.smokechecklist.Create_Mastery_Level_Assignment_With_Multiple_Topics">
+				<methods>
+					<exclude
+						name="Test05_Verify_Choose_A_Category_Header_On_Create_Your_Quiz_Page" />
+					<exclude name="Test06_Verify_Value_In_Choose_A_Category_Dropdown" />
+					<exclude
+						name="Test07_Verify_Header_As_Per_Selected_Option_In_Category_Dropdown_On_Create_Your_Quiz_Page" />
+					<exclude
+						name="Test080_Verify_Notes_And_Description_Under_Header_As_Per_Selected_Option_In_Category_Dropdown_On_Create_Your_Quiz_Page" />
+					<exclude
+						name="Test10_Verify_Instructor_Is_Able_To_Expand_The_Accordion_List_On_Create_Your_Quiz" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>

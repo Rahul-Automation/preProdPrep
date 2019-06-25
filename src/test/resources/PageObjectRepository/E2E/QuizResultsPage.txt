@@ -1,0 +1,130 @@
+# Sakurai Chapter Selection Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+iframe: xpath: .//*[@id='prepu-frame']
+link_quiz_results: xpath: .//div[@class='result-overview clearfix']/div[2]//a[text()='${linkName}']
+txt_answerkey: xpath: .//div[@class='result-answer-key']/h2
+qc_anskey_msg: xpath: .//div[@class='result-answer-key']//span[@class='message']
+nclex-rn_div_remediation: xpath: .//div[@class='remediation-links']
+hinkle_div_remediation: css: .reference-section-text
+txt_queryResPageHeader: xpath: //h1[text()='Results']
+txt_review_answer : xpath: .//h1[@class='review-answer-title'][text()='Review Answers']
+btn_submitFinalAnswer: css: #submit-final-answers
+btn_quizResults: css: .btn.btn-blue.btn-result.space-btn.ember-view
+txt_achieveMasteryMessage: classname: assignment-complete
+review_answers_list: xpath: .//div[@class='answer-list-question']/div
+
+#Answer Key
+incorrect_response_color: css: ul.answer-choices li .circle-wrong
+correct_response_color: css: ul.answer-choices li .circle-ok
+txt_ansKeyHeader: css: .result-answer-key>h3
+list_myResponses: css: .my-response-list.answer-choices>li
+list_txt_myResponses: css: .my-response-list.answer-choices>li>span:nth-child(4)
+list_selectAnsIcon: css: .my-response-list.answer-choices>li span
+list_crrectResponses: css: .correct-rsesponse-list.answer-choices>li
+list_crrectResponsesIcon: css: .correct-response-list.answer-choices>li span
+lnks_seeFullQuestion: css: .gray.see-full-question
+txt_explanationHeader: css: .question-result.answer-key-choice>h5
+txt_questions: css: .question-result.answer-key-choice p:nth-child(2)
+txt_dragNDropQuestions: css: .question-result.answer-key-dragn-drop>p
+txt_explanations:xpath://*[@class='question-result answer-key-choice']/div[@class='content-remediation-explanation']
+txt_red_color: css: .bar-graph-container .content figure .baseline
+txt_green_color: css: .line success
+correct_Answer:xpath://*[@class='correct-answer'][1]
+incorrect_Answer:xpath://*[@class='incorrect-answer'][1]
+icon_red:xpath://*[@class='incorrect-answer'][1]/div/div[1]/ul[@class='my-response-list answer-choices']/li/span[1]
+icon_green:xpath:.//*[@class='correct-answer'][1]/div/div[1]/ul[@class='my-response-list answer-choices']/li/span[1]
+chkbox_bookmark: xpath: .//input[@type='checkbox' and @aria-label='Bookmark this Question']
+chkbox_bookmark_verify: xpath: (.//input[@class='bookmark-question ember-checkbox ember-view'])[${questionNumber}]
+whatisthis_link: xpath: (.//div[@class='bookmark']//a/small)[1]
+whatisthis_popup_header: xpath: (.//div[@class='modal-dialog']//h4[@id='whatsthis-bookmark-title'])[1]
+whatisthis_popup_message: xpath: (.//div[@id='whatsthis-bookmark'])[1]//div[@class='modal-body cf']
+question_limit_popup_header: xpath: //h4[@id="exceed-count-title"]
+question_limit_popup_message: xpath: (.//div[@id='exceed-count'])[1]//div[@class='modal-body cf']
+question_limit_popup_close: xpath: (//*[@id="exceed-count"]/div/div/div[1]/button)[1]
+exit_quiz: xpath:     .//a[text()='Exit quiz']
+quiz_history_bookmark_link: xpath: .//a[text()='View Quiz History & Bookmarked Questions']
+whatisthis_Popup_close: xpath: (//*[@id="whatsthis-bookmark"]/div/div/div[1]/button)[1]
+whatistis_close_Popup: xpath: (.//div[@id='whatsthis-bookmark'])[1]
+lnk_addANote: xpath: .//a[@title='Add a Note']
+txt_addNotePopUp: xpath: (.//div[@class='modal-title'])[${questionNumber}]
+txtArea_AddNote: xpath: (.//div[@class='modal-body'])[${questionNumber}]/textarea
+btn_addNoteSaveDisabled: xpath: (.//div[@class='modal-footer']//button[@disabled='disabled'])[${questionNumber}]
+btn_addNoteSaveEnabled: xpath: (.//div[@class='modal-footer']//button)[${questionNumber}]
+lnk_verifyNotes: xpath: .//h5/a[@aria-label='Notes']
+arrow_Notes: xpath: (.//div[@class='note']//a)[${questionNumber}]
+txtArea_Notes_verify: xpath: .//div[@class='content-note']/textarea
+anskey_question: xpath: .//div[@class='answerKey-content']//h3//following-sibling::p
+Adaptive_Tab: xpath: //*[@id="tab-menu"]/li[3]/a 
+Bookmark_Checkbox: xpath: (.//input[@type='checkbox' and @aria-label='Bookmark this Question'])[1]
+Bookmark_Text: xpath: (.//input[@type='checkbox' and @aria-label='Bookmark this Question'])[1]/parent::div
+Bookmark_Check_Message: css: #toast-container div div.toast-message
+Bookmark_UnCheck_Message: css: #toast-container div div.toast-message
+Bookmark_Checkbox_Uncheck: xpath: (.//input[@type='checkbox' and @aria-label='Bookmark this Question'])[1]
+
+#DragNDrop Questions
+lst_dragnDrop_myResponses: css: .answerKey-content div.question-result.answer-key-dragn-drop:nth-of-type($) .my-response-list.answer-choices>li
+lst_dragnDrop_correctAns: css: .answerKey-content div.question-result.answer-key-dragn-drop:nth-of-type($) .correct-response-list.answer-choices>li
+lst_icon_dragnDrop_myResponses: css: .answerKey-content div.question-result.answer-key-dragn-drop:nth-of-type($) .my-response-list.answer-choices>li>span:nth-of-type(1)
+lst_icon_dragnDrop_correctAns: css: .answerKey-content div.question-result.answer-key-dragn-drop:nth-of-type($) .correct-response-list.answer-choices>li>span:nth-of-type(1)
+#FIB
+txt_fib_question: css: .question-result.text-entry>p
+#Correctly Answered
+txt_correctAnsHeader: css: .correct-answers .result-h
+txt_correctAnsText: css: .correct-answers .result-t .text
+
+#hotspot questions
+lst_hotSpotQuestionText: css: .question-result.answer-key-select-point>p
+point_correctArea: css: .question-result.answer-key-select-point:nth-of-type($) .result-ok
+point_incorrectUserResponse: css: .question-result.answer-key-select-point:nth-of-type($) .result.incorrect
+point_correctUserResponse: css: .question-result.answer-key-select-point:nth-of-type($) .result.correct
+icon_incorrectQuestion: css: .question-result.answer-key-select-point:nth-of-type($) .circle-wrong
+icon_correctQuestion: css: .question-result.answer-key-select-point:nth-of-type($) .circle-ok
+
+#Quiz completed in
+txt_completedInHeader: css: .result-time .result-h
+txt_completedInTime: css: .result-time .result-t .text
+
+#mastery Level Achieved
+txt_masteryLevelAchieved: css: .mastery-level-achieved .text
+#bar-graph-container
+txt_perforByChapter: css: .bar-graph-container .header h2
+lnk_whatIsThis: css: .whatisthis
+lnk_viewPerfForAllChap: css: .ember-view.all-chapters
+txt_chapters: css: .unit>h4
+txt_numberOfquizz:css: .unit>small
+txt_masteryLevel: css: .unit figure:nth-of-type(1) .value
+txt_masteryLevel2: css: .unit .value
+txt_masteryLevel3: css: .unit .value success
+
+#results Footer
+txt_improve_masterLev: css: .footer-msg
+lnk_takeAnotherQuiz:xpath://span[@id='takeAnotherQuiz']
+lnk_overallPerformance: xpath: .//li[@class='overall-performance']/a
+lnk_goBackToAssignments:css:#goToAssignment
+
+#dialogue/new window
+txt_questionDescription: css: #fullQuestion h2
+radioBtn_questionOptions: css: #fullQuestion ul li
+btn_fullQuesWindowClose: css: #fullQuestion .close
+btn_whatsThisWindowClose: css: #whatsthis-mdl .close
+txt_whatThisTitle: classname: modal-title
+
+#temp
+lnk_quizName: css: .quiz-name a:nth-child(1)
+timelimitpassed_message:xpath:(//div[@class='details'])[1]
+testcompletedIn_message:xpath:.//span[@class='text completed-in']
+lbl_resultForTimeAndAnswer:xpath://span[text()='Correctly Answered']/..//span[contains(@class,'text')]
+
+#ML Selection
+ml_assignment_Continue: xpath: //*[@id="action-1"]
+
+#Remove Question
+bookmark_question_tab:  xpath:  .//a[text()='Bookmarked Questions']
+remove_question: xpath:  (//a[text()='Remove Question'])[1]
+remove_question10: xpath: (//a[text()='Remove Question'])[10]
+remove_question_header: xpath: (//h4[@id="remove-bookmark-modal-title"])[1]
+remove_message:  xpath: (//div[@class='remove-bookmark-modal-body'])[1]
+remove_yes_button: xpath: (//span[text()="Yes"])[1]
+no_of_question: xpath: //div[@class='number-of-questions']/h4
+pagination: css: #pager-QuestionBookmarks

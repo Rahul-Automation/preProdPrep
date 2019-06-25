@@ -1,0 +1,18 @@
+# Sakurai Chapter Selection Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+iframe: xpath: //*[@id='prepu-frame']
+link_examhistory: xpath: .//li[@class='quiz-history']/a
+header_examhistory: xpath: .//h2[text()='Practice Exam History']
+status_exam: xpath: .//a[text()='${examName}']//ancestor::tr//span[text()='Completed']
+incomplete_status: xpath: .//a[text()='${examName}']//ancestor::tr//span[text()='Incomplete']
+simulated_header: xpath: .//div[@class='result-type highlight']/div
+txt_examResPageHeader: xpath: //h2[text()='Practice Exam Results']
+stats_exam: xpath: .//*[@class='exam-overview clearfix']
+//icon_remediation: xpath: //*[@class='item-action']/span[@class='icon-remediation icon-smartsenseIcon[${value}]']
+icon_remediation:xpath://*[@class='item-action']/span[@class='icon-remediation icon-smartsenseIcon[${value}]']/parent::*
+WK_Logo: xpath: .//div[@class="h-rightCol"]
+Content_iFrame: xpath: .//*[@id='procedureContent']
+Content_Heading: xpath: //*[@class='h-grayBar']/div[contains(.,'[${value}]')]
+lnk_OverallPerf:xpath://li[@class='exam-reports']//a
+txt_ExamReportPageHeader:xpath://h2[text()='Exam Reports']

@@ -1,0 +1,15 @@
+# Sakurai  Personalisation Loading  Page
+# elementname: locatortype: locatorvalue
+Title: Prep U
+
+txt_personalisation: xpath: //h1[@class='section-header dark']
+txt_section1: xpath: //h3[text()='Analyzing past performance']
+txt_section2: xpath: //h3[text()='Selecting optimal questions for your mastery level']
+txt_section3: xpath: //h3[text()='Finalizing quiz']
+
+div_spinFirstCircleIncomplete: xpath: //div[@class='div1 align-center']//div[@class='circle incomplete']
+div_spinFirstCircleReady: xpath: //div[@class='div1 align-center']//div[@class='circle ready']
+div_spinSecondCircleReady: xpath: //div[@class='div2 align-center']//div[@class='circle ready']
+div_spinThirdCircleReady: xpath: //div[@class='div3 align-center']//div[@class='circle ready']
+lnk_finalizingQuiz: xpath: (//div[@class='container cf animate-quiz-content']//h3)[3]
+img_spinner1complete: xpath : //div[@class='circle incomplete']following-sibling::h3
